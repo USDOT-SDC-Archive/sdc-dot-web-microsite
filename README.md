@@ -50,6 +50,11 @@ The Secure Data Commons (SDC) is a cloud-based analytics platform that enables a
 
 ## I. Release Notes
 
+<strong>August 8, 2019. SDC sdc-dot-webportal Release 2.1</strong><br/>
+What's New in Release 2.1:
+- Redesigned the microsite with new look and feel.
+- Added a new Starter Kit page with links to the Data Analyst User Guide, Data Provider User Guide, and SDC Cost Estimator.
+- Revised language throughout the microsite to reflect operational status (removed “proof of concept”). Added “USDOT” in front of all instances of “Secure Data Commons” and replaced “portal” with “platform.”
 
 <!---                           -->
 <!---     Usage Example         -->
@@ -128,7 +133,7 @@ The Secure Data Commons (SDC) is a cloud-based analytics platform that enables a
 
 ## IX. Release History
 
-
+August 8, 2019. SDC sdc-dot-webportal Release 2.1
 <!---                             -->
 <!---     Contact Information     -->
 <!---                             -->
