@@ -1,0 +1,25 @@
+/* Scss Document footer */
+footer {
+    background-color: $dotblue;
+    border-top:1px solid #14335e;
+    padding-top:4rem;
+    padding-bottom:4rem;
+    color: $white;
+    #dot_logo_footer {
+        max-width: 220px;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    a {
+        color: $white;
+    }
+    h2 {
+        margin: 0;
+    }
+}
+footer .address {
+    font-size: 0.85rem;
+}
+footer ul.list-unstyled>li {
+    font-size: 0.85rem;
+}
