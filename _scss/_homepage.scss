@@ -1,0 +1,56 @@
+/* Scss Document _homepage */
+#top-info {
+    background-color: $darkgray;
+    background-image: url(../images/sdc-hero-image.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem 0;
+    .hero-intro {
+        h1 {
+            font-size: 3.4rem;
+            font-weight: 600;
+        }
+        h2 {
+            font-size: 2.6rem;
+            font-weight: 300;
+        }
+        color: $white;
+        text-align: center;
+        line-height: 1.2;
+        text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.9);
+        hr {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            border: 0;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+    }
+    @media (max-width: 63.99em) {
+        .hero-intro {
+            font-size: 1.6rem;
+            line-height: 1.1;
+        }
+    }    
+}
+#capabilities-icon,
+#datasets-icon,
+#gainaccess-icon {
+    width: 80px;
+    height:80px;
+    margin: 0 auto 5px;
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+}
+#capabilities-icon {background-image: url('../images/sdc-homepage-icons-01.svg');}
+#datasets-icon {background-image: url('../images/sdc-homepage-icons-02.svg');}
+#gainaccess-icon {background-image: url('../images/sdc-homepage-icons-03.svg');}
+@media (max-width: 63.99em) {
+    #capabilities-icon,
+    #datasets-icon,
+    #gainaccess-icon {
+        width: 60px;
+        height:60px;
+        background-size: 60px 60px;
+    }
+}
