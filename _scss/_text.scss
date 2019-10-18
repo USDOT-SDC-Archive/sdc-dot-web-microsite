@@ -1,0 +1,39 @@
+/* Scss Document _text */
+.usa-prose>p, p,
+.usa-list li, .usa-prose>ol li, .usa-prose>ul li {
+    font-weight: 300;
+}
+p:first-of-type {
+    margin-top: 0;
+}
+.list-bullets {
+    font-weight: 300;
+}
+.usa-prose>table thead td, 
+.usa-prose>table thead th, 
+.usa-table thead td, 
+.usa-table thead th {
+   background-color: $dotblue;
+    color: $white;
+    border-color: $white;
+}
+
+
+.usa-prose>table td, 
+.usa-prose>table th, 
+.usa-table td, 
+.usa-table th {
+    background-color: transparent;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+p.intro {
+    font-size: 1.5rem;
+}

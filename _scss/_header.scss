@@ -1,0 +1,32 @@
+/* Scss Document _header */
+#dot-header {
+    height: 5rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    background-color: $dotblue;
+    width: 100%;
+    #dot_logo {
+        height: 2rem;
+    }
+    @media (min-width: 64em) {
+        #dot_logo {
+            height: 2.5rem;
+        }
+    }
+}
+@media (min-width: 64em) {
+    .usa-logo {
+        margin-top: 1.5rem;
+        margin-bottom: 1.75rem;
+        font-size: 1.75rem;
+        color:$dotblue;
+    }
+}
+@media (max-width: 1180px) and (min-width: 1024px) {
+    .usa-logo {
+        font-size: 1.5rem;
+    }
+}
+.usa-logo a {
+    color:$dotblue;
+}

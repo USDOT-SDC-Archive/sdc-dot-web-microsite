@@ -1,0 +1,78 @@
+/* Scss Document _nav */
+/* Transportation.gov top links */
+.usa-nav__secondary-links a {
+    color: $white;
+    font-size: 0.8rem;
+}
+.usa-nav__secondary-links a:hover,
+.usa-nav__secondary-links a:focus {
+    color: $white;
+    text-decoration: underline;
+}
+
+@media (min-width: 64em) {
+    .usa-nav__submenu .usa-nav__submenu-item+* {
+        margin-top: 0;
+    }
+    .usa-nav__submenu .usa-nav__submenu-item a {
+        width: 100%;
+        display: block;
+        text-decoration: none;
+        padding: 1rem;
+    }
+    .usa-nav__submenu .usa-nav__submenu-item a:focus,
+    .usa-nav__submenu .usa-nav__submenu-item a:hover {
+        background-color: #005ea2;
+        text-decoration: none;
+        padding: 1rem;
+    }
+    .usa-nav__submenu-item a.usa-current,
+    .usa-nav__submenu-item a.usa-current:focus,
+    .usa-nav__submenu-item a.usa-current:hover {
+        background-color: #005ea2;
+        text-decoration: none;
+    }
+    .usa-nav__submenu .usa-nav__submenu-item a.usa-current:after {
+        display: none;
+    }
+    .usa-nav__submenu {
+        padding: 0;
+    }
+    .usa-nav__secondary {
+        bottom: 7.25rem;
+        position: absolute;
+        right: 1rem;
+    }
+    .usa-nav__secondary-links .usa-nav__secondary-item+.usa-nav__secondary-item:before {
+        color: #08e8f6;
+        padding-right: .5rem;
+    }
+}
+@media (min-width: 64em) {
+    .usa-nav__primary>.usa-nav__primary-item>a,
+    .usa-nav__primary button {
+        margin-top: 0.25rem;
+        padding: 2rem 1.5rem;       
+    }
+}
+@media (max-width: 63.99em) {
+    .usa-nav__primary {
+        order: 1;
+    }
+    .usa-nav__secondary {
+        bottom: auto;
+        position: relative;
+        right: auto;
+        margin: 0;
+        order:2;
+    }
+    .usa-nav__secondary-links a {
+        color: #565c65;
+    }
+}
+.usa-nav__primary-item a .usa-header__primary-link-icon-social {
+    height: .7rem;
+    width: .7rem;
+    background-color: transparent;
+    margin-left: .2rem;
+}
