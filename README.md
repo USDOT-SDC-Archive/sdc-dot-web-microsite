@@ -50,6 +50,10 @@ The Secure Data Commons (SDC) is a cloud-based analytics platform that enables a
 
 ## I. Release Notes
 
+<strong>December 10, 2019. SDC sdc-dot-web-microsite Release 2.4</strong><br/>
+What's New in Release 2.4:
+- Starter Kit page updated with the latest (version 4.0) of SDC Cost Estimator.
+
 <strong>November 1, 2019. SDC sdc-dot-web-microsite Release 2.3</strong><br/>
 What's New in Release 2.3:
 - Added a new section called “Manage Workstations” to the Data Analyst User Guide to explain how to resize workstations and schedule/extend uptime. Removed references to the Redshift cluster address. Also updated formatting and added clarifying information for new users.
@@ -141,9 +145,11 @@ What's New in Release 2.1:
 
 ## IX. Release History
 
-November 1, 2019. SDC sdc-dot-web-microsite Release 2.3
-October 18, 2019. SDC sdc-dot-web-microsite Release 2.2
-August 8, 2019. SDC sdc-dot-web-microsite Release 2.1
+December 10, 2019. SDC sdc-dot-web-microsite Release 2.4<br/>
+November 1, 2019. SDC sdc-dot-web-microsite Release 2.3<br/>
+October 18, 2019. SDC sdc-dot-web-microsite Release 2.2<br/>
+August 8, 2019. SDC sdc-dot-web-microsite Release 2.1<br/>
+
 <!---                             -->
 <!---     Contact Information     -->
 <!---                             -->
