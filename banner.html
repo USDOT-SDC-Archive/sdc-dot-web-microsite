@@ -1,0 +1,80 @@
+<script>
+  var current_page = document.getElementById('banner').getAttribute('data-current-page');
+  document.getElementById(current_page).classList.add('usa-current')
+  if (current_page == 'home_menu') {
+    document.getElementById('last_hr').setAttribute('hidden', 'true');
+  }
+</script>
+<a class="usa-skipnav" href="#main-content">Skip to main content</a>
+<div class="usa-banner">
+  <div class="usa-accordion">
+    <header class="usa-banner__header">
+      <div class="usa-banner__inner">
+        <div class="grid-col-auto"> <img class="usa-banner__header-flag" src="assets/img/us_flag_small.png" alt="U.S. flag"> </div>
+        <div class="grid-col-fill tablet:grid-col-auto">
+          <p class="usa-banner__header-text">An official website of the United States government</p>
+          <p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>
+        </div>
+        <button class="usa-accordion__button usa-banner__button"
+          aria-expanded="false" aria-controls="gov-banner"> <span class="usa-banner__button-text">Here’s how you know</span> </button>
+      </div>
+    </header>
+    <div class="usa-banner__content usa-accordion__content" id="gov-banner" hidden>
+      <div class="grid-row grid-gap-lg">
+        <div class="usa-banner__guidance tablet:grid-col-6"> <img class="usa-banner__icon usa-media-block__img" src="assets/img/icon-dot-gov.svg" alt="Dot gov">
+          <div class="usa-media-block__body">
+            <p> <strong>The .gov means it’s official.</strong> <br>
+              Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure you’re on a federal government site. </p>
+          </div>
+        </div>
+        <div class="usa-banner__guidance tablet:grid-col-6"> <img class="usa-banner__icon usa-media-block__img" src="assets/img/icon-https.svg" alt="Https">
+          <div class="usa-media-block__body">
+            <p> <strong>The site is secure.</strong> <br>
+              The <strong>https://</strong> ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="usa-overlay"></div>
+<header class="usa-header usa-header--basic" role="banner">
+    <div class="usa-banner__header" id="dot-header">
+        <div class="usa-banner__inner">
+            <a href="https://transportation.gov"><img id="dot_logo" src="images/dot_logo.png" alt="Department of Transportation logo"></a>
+        </div>
+    </div>
+  <div class="usa-nav-container">
+    <div class="usa-navbar">
+      <div class="usa-logo" id="basic-logo"> <em class="usa-logo__text"><a href="index.html" title="Home" aria-label="Home">Secure Data Commons</a></em> </div>
+      <button class="usa-menu-btn">Menu</button>
+    </div>
+    <nav role="navigation" class="usa-nav">
+      <a href="https://portal.securedatacommons.com/" class="usa-button">Login</a>
+      <a class="margin-bottom-2 text-primary" href="SDCAccessRequestForm.pdf" target="_blank" style="text-decoration: none;">Request Access</a>
+      <div class="usa-nav__secondary">
+          <div class="dh-header__secondary-links">
+              <ul class="usa-nav__secondary-links">
+                  <li class="usa-nav__secondary-item"><a href="https://www.its.dot.gov/" target="_blank">ABOUT ITS JPO</a></li>
+                  <li class="usa-nav__secondary-item"><a href="https://www.transportation.gov/mission/about-us" target="_blank">ABOUT U.S. DOT</a></li>
+                  <li class="usa-nav__secondary-item"><a href="https://www.transportation.gov/briefingroom" target="_blank">U.S. DOT BRIEFING ROOM</a></li>
+                  <li class="usa-nav__secondary-item"><a href="https://www.transportation.gov/our-activities" target="_blank">U.S. DOT ACTIVITIES</a></li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+  </div>
+  <hr>
+  <div class="usa-nav-container">
+    <nav role="navigation">
+      <ul class="usa-nav__primary usa-accordion">
+        <li id="home_menu" class="usa-nav__primary-item"> <a class="usa-nav__link" href="index.html"><span>Home</span></a> </li>
+        <li id="about_menu" class="usa-nav__primary-item"> <a class="usa-nav__link" href="about.html"><span>About SDC</span></a> </li>
+        <li id="getting_started_menu" class="usa-nav__primary-item"> <a class="usa-nav__link" href="getting_started.html"><span>Getting Started</span></a> </li>
+        <li class="usa-nav__primary-item"> <a class="usa-nav__link" href="https://github.com/usdot-jpo-sdc" target="_blank"><span>GitHub Project</span> <img src="assets/img/external-link.svg" alt="" class="usa-header__primary-link-icon-social"></a> </li>
+      </ul>
+    </nav>
+  </div>
+  <hr class="margin-top-0" id="last_hr">
+  </div>
+</header>
