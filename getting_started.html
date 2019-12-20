@@ -1,3 +1,253 @@
-<div>
-  Getting Started
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- SEO -->
+<meta name="description" content="The Secure Data Commons is an online data warehousing and analysis platform for transportation researchers. On this portal, researchers can take advantage of pre-established programming environments to access and analyze a growing set of transportation-related data sets.">
+<meta name="keywords" content="Secure Data Commons, USDOT, DOT, FHWA, Transportation Research, Datasets">
+<meta name="author" content="U.S. Department of Transportation">
+<!-- Disable tap highlight on IE -->
+<meta name="msapplication-tap-highlight" content="no">
+<title>Secure Data Commons</title>
+<!-- USWDS Styles -->
+<link rel="stylesheet" href="assets/css/uswds.min.css">
+<!-- SDC Styles -->
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<a class="usa-skipnav" href="#main-content">Skip to main content</a>
+<div class="usa-banner">
+	<div class="usa-accordion">
+		<header class="usa-banner__header">
+			<div class="usa-banner__inner">
+				<div class="grid-col-auto"> <img class="usa-banner__header-flag" src="assets/img/us_flag_small.png" alt="U.S. flag"> </div>
+				<div class="grid-col-fill tablet:grid-col-auto">
+					<p class="usa-banner__header-text">An official website of the United States government</p>
+					<p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>
+				</div>
+				<button class="usa-accordion__button usa-banner__button"
+          aria-expanded="false" aria-controls="gov-banner"> <span class="usa-banner__button-text">Here’s how you know</span> </button>
+			</div>
+		</header>
+		<div class="usa-banner__content usa-accordion__content" id="gov-banner">
+			<div class="grid-row grid-gap-lg">
+				<div class="usa-banner__guidance tablet:grid-col-6"> <img class="usa-banner__icon usa-media-block__img" src="assets/img/icon-dot-gov.svg" alt="Dot gov">
+					<div class="usa-media-block__body">
+						<p> <strong>The .gov means it’s official.</strong> <br>
+							Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure you’re on a federal government site. </p>
+					</div>
+				</div>
+				<div class="usa-banner__guidance tablet:grid-col-6"> <img class="usa-banner__icon usa-media-block__img" src="assets/img/icon-https.svg" alt="Https">
+					<div class="usa-media-block__body">
+						<p> <strong>The site is secure.</strong> <br>
+							The <strong>https://</strong> ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
+<div class="usa-overlay"></div>
+<header class="usa-header usa-header--basic" role="banner">
+    <div class="usa-banner__header" id="dot-header">
+        <div class="usa-banner__inner">
+            <a href="https://transportation.gov"><img id="dot_logo" src="images/dot_logo.png" alt="Department of Transportation logo"></a>
+        </div>
+    </div>
+	<div class="usa-nav-container">
+		<div class="usa-navbar">
+			<div class="usa-logo" id="basic-logo"> <em class="usa-logo__text"><a href="index.html" title="Home" aria-label="Home">Secure Data Commons</a></em> </div>
+			<button class="usa-menu-btn">Menu</button>
+    </div>
+    <nav role="navigation" class="usa-nav">
+      <a href="login.html" class="usa-button">Login</a>
+      <a href="request-access.html" class="margin-bottom-2" style="text-decoration: none;">Request Access</a>
+      <div class="usa-nav__secondary">
+          <div class="dh-header__secondary-links">
+              <ul class="usa-nav__secondary-links">
+                  <li class="usa-nav__secondary-item"><a href="https://www.its.dot.gov/" target="_blank">ABOUT ITS JPO</a></li>
+                  <li class="usa-nav__secondary-item"><a href="https://www.transportation.gov/mission/about-us" target="_blank">ABOUT U.S. DOT</a></li>
+                  <li class="usa-nav__secondary-item"><a href="https://www.transportation.gov/briefingroom" target="_blank">U.S. DOT BRIEFING ROOM</a></li>
+                  <li class="usa-nav__secondary-item"><a href="https://www.transportation.gov/our-activities" target="_blank">U.S. DOT ACTIVITIES</a></li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+  </div>
+  <hr>
+  <div class="usa-nav-container">
+    <nav role="navigation">
+        <ul class="usa-nav__primary usa-accordion">
+          <li class="usa-nav__primary-item"> <a class="usa-nav__link" href="index.html"><span>Home</span></a> </li>
+            <li class="usa-nav__primary-item"> <a class="usa-nav__link" href="about.html"><span>About SDC</span></a> </li>
+            <li class="usa-nav__primary-item"> <a class="usa-nav__link usa-current" href="getting_started.html"><span>Getting Started</span></a> </li>
+            <li class="usa-nav__primary-item"> <a class="usa-nav__link" href="support.html"><span>Support</span></a> </li>
+            <li class="usa-nav__primary-item"> <a class="usa-nav__link" href="https://github.com/usdot-jpo-sdc" target="_blank"><span>GitHub Project</span> <img src="assets/img/external-link.svg" alt="" class="usa-header__primary-link-icon-social"></a> </li>
+        </ul>
+      </nav>
+  </div>
+	</div>
+</header>
+<main >
+  <section>
+    <div class="grid-container">
+      <div class="grid-row grid-gap margin-y-5">
+        <div class="tablet:grid-col-3">
+          <nav aria-label="Secondary navigation">
+            <ul class="usa-sidenav">
+              <li class="usa-sidenav__item">
+                <a href="" class="usa-current">What you need to know</a>
+              </li>
+              <li class="usa-sidenav__item">
+                <a href="sdc-lifecycle.html">Starting a Project</a>
+              </li>
+              <li class="usa-sidenav__item">
+                <a href="current-data.html">Getting Data to SDC</a>
+              </li>
+              <li class="usa-sidenav__item">
+                <a href="success-stories.html">Conducting Analysis</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="tablet:grid-col-6">
+          <h1 class="margin-top-0 margin-bottom-1">What you need to know</h1>
+          <p class="line-height-sans-6">
+            The USDOT Secure Data Commons (SDC) enables collaborative and controlled integration and analysis of research data at 
+            the moderate sensitivity level, including personally identifiable information (PII) and confidential business 
+            information (CBI). With three types of data transfer updates supported: real-time (streaming), batch (daily, weekly), 
+            and ad-hoc (occasional), the SDC offers authorized and controlled access to individual datasets – as well as the metadata 
+            – associated with those datasets.
+          </p>
+          <b>
+            Considering SDC for your project, data, or analysis needs? Here’s what you need to know. 
+          </b>
+        </div>
+        <div class="tablet:grid-col-3">
+            <img class="padding-top-5" src="images/starterkit-1.jpg" alt="About graphic" class="radius-md">
+        </div>
+        <div class="tablet:grid-col-6 tablet:grid-offset-3">
+          <h2>See how SDC can help you as a</h2>
+        </div>
+        <div class="grid-row grid-gap margin-bottom-5">
+          <div class="tablet:grid-col-3 tablet:grid-offset-3">
+            <div class="info-card border border-primary-light" style="height: 290px;" >
+              <a href="starting_a_project.html" style="text-decoration: none;" class="text-primary">
+                <div class="margin-x-1">
+                  <h3>Product Owner</h3>
+                  <ul>
+                    <li style="color: black">Conceptualize your project within SDC and get a project cost estimate</li>
+                    <li style="color: black">Control the type of derived data users can export or copy from the system</li>
+                    <li style="color: black">Understand the overall process and schedule for using SDC</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="tablet:grid-col-3">
+            <div class="info-card border border-primary-light" style="height: 290px;" >
+              <a href="getting_data_to_sdc.html" style="text-decoration: none;" class="text-primary">
+                <div class="margin-x-1">
+                  <h3>Data Provider</h3>
+                  <ul>
+                    <li style="color: black">Define the terms of access and grant or deny access to specific SDC users or groups</li>
+                    <li style="color: black">Learn how SDC can ensure the right data is made available for your project</li>
+                    <li style="color: black">Upload data through your project</li>
+                    <li style="color: black">Create code and use analytics tools to create a curate high-value datasets</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="tablet:grid-col-3">
+            <div class="info-card border border-primary-light" style="height: 290px;" >
+              <a href="conducting_analysis.html" style="text-decoration: none;" class="text-primary">
+                <div class="margin-x-1">
+                  <h3>Data Analyst</h3>
+                  <ul>
+                    <li style="color: black">Learn what types of data are available for your analysis</li>
+                    <li style="color: black">Understand the tools and query languages available to you</li>
+                    <li style="color: black">Develop common data formats and fix issues during testing</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div> <!-- grid-row -->
+        <div class="tablet:grid-col-3 tablet:grid-offset-3">
+          <h3>Technical Requirements</h3>
+          <img style="display: block;" class="margin-x-auto" src="assets/img/circle-124.png" alt="Dot gov">
+        </div>
+        <div class="tablet:grid-col-6 padding-bottom-10">
+          <p class="padding-top-6 line-height-sans-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet 
+            lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient 
+            montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin 
+            sapien nunc accuan eget.
+          </p>
+        </div>
+        <div class="tablet:grid-col-3 tablet:grid-offset-3">
+          <h3>Security</h3>
+          <img style="display: block;" class="margin-x-auto" src="assets/img/circle-124.png" alt="Dot gov">
+        </div>
+        <div class="tablet:grid-col-6 padding-bottom-10">
+          <p class="padding-top-6 line-height-sans-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet 
+            lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient 
+            montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin 
+            sapien nunc accuan eget.
+          </p>
+        </div>
+        <div class="tablet:grid-col-3 tablet:grid-offset-3">
+          <h3>Access to SDC Portal</h3>
+          <img style="display: block;" class="margin-x-auto" src="assets/img/circle-124.png" alt="Dot gov">
+        </div>
+        <div class="tablet:grid-col-6 padding-bottom-10">
+          <p class="padding-top-6 line-height-sans-6">
+              Currently the SDC is only available to USDOT-approved projects. If you are a part of a current SDC project and would like access,
+               or if you would like to propose your project as a new applicant for the SDC,
+               please email <a href="mailto:'support@securedatacommons.com'" style="text-decoration: none;">support@securedatacommons.com</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer role="contentinfo">
+    <div class="grid-container">
+        <div class="grid-row grid-gap">
+            <div class="grid-col-12 tablet:grid-col-4">
+                <a href="https://transportation.gov"><img id="dot_logo_footer" src="images/dot_logo.png" alt="Department of Transportation logo"></a>
+                <h2>USDOT Secure Data Commons Platform</h2>
+                <p><a href="https://github.com/usdot-jpo-sdc" target="_blank">VIEW THIS PROJECT ON GITHUB</a></p>
+            </div> <!-- /.grid-col -->
+            <div class="grid-col-12 tablet:grid-col-6 tablet:grid-offset-2">
+                <div class="grid-row grid-gap">
+                    <div class="grid-col-12 tablet:grid-col-6">
+                        <ul class="usa-list usa-list--unstyled">
+                            <li><a href="https://www.fhwa.dot.gov/privacy.cfm">Privacy Policy</a></li>
+                            <li><a href="https://www.fhwa.dot.gov/foia/">Freedom of Information Act (FOIA)</a></li>
+                            <li><a href="https://www.fhwa.dot.gov/accessibility/">Accessibility</a></li>
+                            <li><a href="https://www.fhwa.dot.gov/webpolicies/publishschedule.cfm">Web Policies &amp; Notices</a></li>
+                            <li><a href="https://www.transportation.gov/civil-rights/civil-rights-awareness-enforcement/no-fear-act">No Fear Act</a></li>
+                        </ul>
+                    </div> <!-- /.grid-col -->
+                    <div class="grid-col-12 tablet:grid-col-6">
+                        <ul class="usa-list usa-list--unstyled">
+                            <li><a href="https://www.oig.dot.gov/Hotline">Report Waste, Fraud and Abuse</a></li>
+                            <li><a href="https://www.transportation.gov/">U.S. Department of Transportation</a></li>
+                            <li><a href="https://www.usa.gov/">USA.gov</a></li>
+                            <li><a href="https://www.whitehouse.gov/">WhiteHouse.gov</a></li>
+                        </ul>
+                    </div> <!-- /.grid-col -->
+                </div> <!-- /.grid-row -->
+            </div> <!-- /.grid-col -->
+        </div> <!-- /.grid-row -->
+    </div> <!-- /.grid-container -->
+</footer>
+<script src="assets/js/uswds.min.js"></script>
+</body>
+</html>
