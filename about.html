@@ -10,7 +10,7 @@
 <meta name="author" content="U.S. Department of Transportation">
 <!-- Disable tap highlight on IE -->
 <meta name="msapplication-tap-highlight" content="no">
-<title>Secure Data Commons</title>
+<title>About SDC | Secure Data Commons</title>
 <!-- USWDS Styles -->
 <link rel="stylesheet" href="assets/css/uswds.min.css">
 <!-- SDC Styles -->
@@ -61,131 +61,102 @@
 		<div class="usa-navbar">
 			<div class="usa-logo" id="basic-logo"> <em class="usa-logo__text"><a href="index.html" title="Home" aria-label="Home">Secure Data Commons</a></em> </div>
 			<button class="usa-menu-btn">Menu</button>
-    </div>
-    <nav role="navigation" class="usa-nav">
-      <a href="login.html" class="usa-button">Login</a>
-      <a href="request_access.html" class="margin-bottom-2 text-primary" style="text-decoration: none;">Request Access</a>
-      <div class="usa-nav__secondary">
-          <div class="dh-header__secondary-links">
-              <ul class="usa-nav__secondary-links">
-                  <li class="usa-nav__secondary-item"><a href="https://www.its.dot.gov/" target="_blank">ABOUT ITS JPO</a></li>
-                  <li class="usa-nav__secondary-item"><a href="https://www.transportation.gov/mission/about-us" target="_blank">ABOUT U.S. DOT</a></li>
-                  <li class="usa-nav__secondary-item"><a href="https://www.transportation.gov/briefingroom" target="_blank">U.S. DOT BRIEFING ROOM</a></li>
-                  <li class="usa-nav__secondary-item"><a href="https://www.transportation.gov/our-activities" target="_blank">U.S. DOT ACTIVITIES</a></li>
-              </ul>
-          </div>
-      </div>
-    </nav>
-  </div>
-  <hr>
-  <div class="usa-nav-container">
-    <nav role="navigation">
-        <ul class="usa-nav__primary usa-accordion">
-          <li class="usa-nav__primary-item"> <a class="usa-nav__link" href="index.html"><span>Home</span></a> </li>
-                  <li class="usa-nav__primary-item"> <a class="usa-nav__link usa-current" href="about.html"><span>About SDC</span></a> </li>
-                  <li class="usa-nav__primary-item"> <a class="usa-nav__link" href="getting_started.html"><span>Getting Started</span></a> </li>
-                  <li class="usa-nav__primary-item"> <a class="usa-nav__link" href="support.html"><span>Support</span></a> </li>
-                  <li class="usa-nav__primary-item"> <a class="usa-nav__link" href="https://github.com/usdot-jpo-sdc" target="_blank"><span>GitHub Project</span> <img src="assets/img/external-link.svg" alt="" class="usa-header__primary-link-icon-social"></a> </li>
-        </ul>
-      </nav>
-  </div>
+		</div>
+		<nav role="navigation" class="usa-nav">
+			<button class="usa-nav__close"><img src="assets/img/close.svg" alt="close"></button>
+			<ul class="usa-nav__primary usa-accordion">
+				<li class="usa-nav__primary-item"> <a class="usa-nav__link" href="index.html"><span>Home</span></a> </li>
+                <li class="usa-nav__primary-item"> <a class="usa-nav__link usa-current" href="about.html"><span>About SDC</span></a> </li>
+                <li class="usa-nav__primary-item"> 
+                    <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="nav-dropdown"><span>SDC Platform</span></button>
+                    <ul id="nav-dropdown" class="usa-nav__submenu">
+                        <li class="usa-nav__submenu-item"><a href="starter-kit.html">Starter Kit</a></li>
+                        <li class="usa-nav__submenu-item"><a href="data-providers.html">Data Providers</a></li>
+                        <li class="usa-nav__submenu-item"><a href="data-analysts.html">Data Analysts</a></li>
+                        <li class="usa-nav__submenu-item"><a href="project-managers.html">Project Managers</a></li>
+                    </ul>
+                </li>
+                <li class="usa-nav__primary-item"> <a class="usa-nav__link" href="https://github.com/usdot-jpo-sdc" target="_blank"><span>GitHub Project</span> <img src="assets/img/external-link.svg" alt="" class="usa-header__primary-link-icon-social"></a> </li>
+                <li class="usa-nav__primary-item"> <a class="usa-nav__link" href="access-sdc.html"><span>Access SDC</span></a> </li>
+			</ul>
+            <div class="usa-nav__secondary">
+                <div class="dh-header__secondary-links">
+                    <ul class="usa-nav__secondary-links">
+                        <li class="usa-nav__secondary-item"><a href="https://www.its.dot.gov/" target="_blank">ABOUT ITS JPO</a></li>
+                        <li class="usa-nav__secondary-item"><a href="https://www.transportation.gov/mission/about-us" target="_blank">ABOUT U.S. DOT</a></li>
+                        <li class="usa-nav__secondary-item"><a href="https://www.transportation.gov/briefingroom" target="_blank">U.S. DOT BRIEFING ROOM</a></li>
+                        <li class="usa-nav__secondary-item"><a href="https://www.transportation.gov/our-activities" target="_blank">U.S. DOT ACTIVITIES</a></li>
+                    </ul>
+                </div>
+            </div>
+		</nav>
 	</div>
 </header>
-<main >
-  <section>
+<main id="main-content" class="usa-prose">
     <div class="grid-container">
-      <div class="grid-row grid-gap margin-y-5">
-        <div class="tablet:grid-col-2">
-          <nav aria-label="Secondary navigation">
-            <ul class="usa-sidenav">
-              <li class="usa-sidenav__item">
-                <a href="" class="usa-current">What is SDC?</a>
-              </li>
-              <li class="usa-sidenav__item">
-                <a href="sdc_lifecycle.html">SDC Lifecycle</a>
-              </li>
-              <li class="usa-sidenav__item">
-                <a href="current_data.html">Current Data Available</a>
-              </li>
-              <li class="usa-sidenav__item">
-                <a href="success_stories.html">Success Stories</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="tablet:grid-col-10">
-          <h1 class="margin-top-0 margin-bottom-1" style="font-weight: normal;">What is SDC?</h1>
-          <p class="line-height-sans-6">
-              The USDOT Secure Data Commons (SDC) is a cloud-based analytics platform that enables traffic engineers, researchers, and data scientists to access
-              transportation-related datasets. The U.S. Department of Transportation (USDOT) created the SDC to provide a secure platform for sharing and collaborating 
-              on research, tools, algorithms, and analysis involving moderate sensitivity level (PII & CBI) datasets using commercially available tools, without needing 
-              to install tools or software locally.
-          </p>
-          <b>
-            SDC offers a common platform for innovative data analysis and sharing of results that cuts across the Department’s data silos.
-          </b>
-        </div>
-        <div class="tablet:grid-col-6 tablet:grid-offset-2">
-          <h2>How it works</h2>
-          <p>With a robust security architecture that secures datasets and user workstations, the SDC:</p>
-        </div>
-        <div class="grid-row grid-gap margin-bottom-5">
-          <div class="tablet:grid-col-3 tablet:grid-offset-2">
-            <div class="info-card border border-primary-light" style="height: 260px;" >
-              <div class="margin-2">
-                <div class="margin-x-auto margin-top-neg-2 margin-bottom-neg-2" style="height: 150px; width: 150px;">
-                  <img src="assets/redesign_svgs//SDC_Icon_Cloud_Capabilities.svg" alt="Cloud icon">
+        <div class="grid-row">
+            <div class="grid-col-12">
+                <h1>About the USDOT Secure Data Commons Platform</h1>
+            </div> <!-- /.grid-col -->
+        </div> <!-- /.grid-row -->
+    </div> <!-- /.grid-containaer -->
+    <div class="grid-container">
+        <div class="grid-row grid-gap">
+            <div class="grid-col-12 tablet:grid-col-6">
+                <p class="intro">The USDOT Secure Data Commons (SDC) is a cloud-based analytics platform that enables traffic engineers, researchers, and data scientists to access transportation-related datasets. The U.S. Department of Transportation (USDOT) created the SDC to provide a secure platform for sharing and collaborating on research, tools, algorithms, and analysis involving sensitive datasets using commercially available tools, without needing to install tools or software locally.</p>
+            </div> <!-- /.grid-col -->
+            <div class="grid-col-12 tablet:grid-col-6">
+                <img src="images/about-sdc-2.jpg" alt="About Graphic" class="radius-md">
+            </div>
+        </div> <!-- /.grid-row -->
+    </div> <!-- /.grid-container -->
+    <div class="grid-container margin-10">
+        <div class="grid-row grid-gap">
+            <div class="grid-col-12 tablet:grid-col-6 order-1 tablet:order-2">
+                <h2>What It Does</h2>
+                <ul class="usa-list">
+                    <li>Enables scalable data storage and analysis and user access protocol via cloud-based platforms</li>
+                    <li>Leverages cloud capabilities to share complex (high volume, velocity, or variety) transportation datasets with the transportation research community</li>
+                    <li>Provides authorized access to users through a data use agreement with revocable access terms to protect the sensitivity of the data</li>
+                    <li>Provides users with predefined tools for data analysis and encourages the creation of custom toolsets, open sharing of code, and addition of datasets among the user community</li>
+                    <li>Ensures that sensitive data are protected through adherence to USDOT’s security standards for information technology</li>
+                </ul>
+            </div> <!-- /.grid-col -->
+            <div class="grid-col-12 tablet:grid-col-6 order-2 tablet:order-1">
+                <div class="img-wrap">
+                    <img src="images/objectives.jpg" alt="Objectives Graphic" class="radius-md">
                 </div>
-                <p>Leverages cloud capabilities to share complex (high volume, velocity, or variety) transportation datasets with the transportation research community</p>
-              </div>
-            </div>
-          </div>
-            <div class="tablet:grid-col-3">
-              <div class="info-card border border-primary-light" style="height: 260px;" >
-                <div class="margin-2">
-                  <div class="margin-x-auto margin-top-neg-2 margin-bottom-neg-2" style="height: 150px; width: 150px;">
-                    <img src="assets/redesign_svgs/SDC_Icon_Authorized_Access.svg" alt="Computer icon">
-                  </div>
-                  <p>Provides authorized access to users through a data use agreement with revocable access terms to protect the sensitivity of the data</p>
+            </div> <!-- /.grid-col -->
+        </div> <!-- /.grid-row -->
+    </div> <!-- /.grid-container -->
+    <div class="grid-container margin-10">
+        <div class="grid-row grid-gap">
+            <div class="grid-col-12 tablet:grid-col-6">
+                <h2>Core Capabilities</h2>
+                <ul class="usa-list">
+                    <li>Granular access controls for data and code for users</li>
+                    <li>Robust security architecture that secures datasets and user workstations</li>
+                    <li>Ability for users to upload and share their own data, create code, and use analytic tools in the sandbox</li>
+                    <li>Ability to create and curate high-value datasets that are easily searchable and linkable</li>
+                </ul>
+            </div> <!-- /.grid-col -->
+            <div class="grid-col-12 tablet:grid-col-6">
+                <div class="img-wrap">
+                    <img src="images/capabilities.jpg" alt="Core Capabilities Graphic" class="radius-md">
                 </div>
-              </div>
-            </div>
-          <div class="tablet:grid-col-3">
-            <div class="info-card border border-primary-light" style="height: 260px;" >
-              <div class="margin-2">
-                  <div class="margin-x-auto margin-top-neg-2 margin-bottom-neg-2" style="height: 150px; width: 150px;">
-                    <img src="assets/redesign_svgs/SDC_Icon_Data_Storage.svg" alt="Cloud gears icon">
-                  </div>
-                <p>Enables scalable data storage and analysis and user access protocol via cloud-based platforms</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-row grid-gap margin-bottom-5">
-          <div class="tablet:grid-col-3 tablet:grid-offset-2">
-            <div class="info-card border border-primary-light" style="height: 260px;" >
-              <div class="margin-2">
-                <div class="margin-x-auto margin-top-neg-2 margin-bottom-neg-2" style="height: 150px; width: 150px;">
-                  <img src="assets/redesign_svgs/SDC_Icon_Data_Protection.svg" alt="Cloud lock icon">
-                </div>
-                <p>Ensures that sensitive data are protected through adherence to USDOT’s security standards for information technology</p>
-              </div>
-            </div>
-          </div>
-          <div class="tablet:grid-col-3">
-            <div class="info-card border border-primary-light" style="height: 260px;" >
-              <div class="margin-2">
-                <div class="margin-x-auto margin-top-neg-2 margin-bottom-neg-2" style="height: 150px; width: 150px;">
-                  <img src="assets/redesign_svgs/SDC_Icon_Predefined_Tools.svg" alt="Computer icon">
-                </div>
-                <p>Provides users with predefined tools for data analysis and encourages the creation of custom toolsets, open sharing of code, and addition of datasets among the user community</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+            </div> <!-- /.grid-col -->
+        </div> <!-- /.grid-row -->
+    </div> <!-- /.grid-container -->
+    <section class="subsection"> 
+        <div class="grid-container">
+            <div class="grid-row grid-gap">
+                <div class="grid-col-12">
+                    <p><b>Visit our Starter Kit for more SDC resources, including videos and documentation.</b>&nbsp;&nbsp;&nbsp; <a href="starter-kit.html" class="usa-button">Starter Kit</a></p>
+                    
+                </div> <!-- /.grid-col -->
+            </div> <!-- /.grid-row -->
+        </div> <!-- /.grid-container -->
+    </section> <!-- /.subsection -->
 </main>
 <footer role="contentinfo">
     <div class="grid-container">
