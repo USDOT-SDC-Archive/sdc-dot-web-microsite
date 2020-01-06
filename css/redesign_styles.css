@@ -118,6 +118,14 @@
   color: black;
 }
 
-.gettingStartedImgContainer {
-  
+.homeInfoCard {
+  height: 380px;
+}
+
+.homeInfoCard a {
+  text-decoration: none;
+}
+
+.homeImgContainer {
+  height: 150px; width: 150px;
 }
