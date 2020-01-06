@@ -52,6 +52,10 @@
   height: 200px
 }
 
+.nextStepsBox a {
+  text-decoration: none;
+}
+
 .nextStepsIconContainer {
   width: 100px;
   height: 100px;
