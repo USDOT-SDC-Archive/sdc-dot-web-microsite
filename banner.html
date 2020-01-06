@@ -1,9 +1,11 @@
 <script>
-  var current_page = document.getElementById('banner').getAttribute('data-current-page');
-  document.getElementById(current_page).classList.add('usa-current')
-  if (current_page == 'home_menu') {
-    document.getElementById('last_hr').setAttribute('hidden', 'true');
-  }
+  $(document).ready(function() {
+    var current_page = $('#banner').data('current-page');
+    $('#' + current_page).addClass('usa-current');
+    if (current_page == 'home_menu') {
+      $('#last_hr').hide();
+    }
+  });
 </script>
 <a class="usa-skipnav" href="#main-content">Skip to main content</a>
 <div class="usa-banner">
