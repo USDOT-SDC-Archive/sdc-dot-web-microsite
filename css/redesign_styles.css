@@ -133,3 +133,17 @@
 .homeImgContainer {
   height: 150px; width: 150px;
 }
+
+.lifecycleImgContainer {
+  height: 120px;
+  width: 120px;
+  float: left
+}
+
+.lifecycleInfoCard {
+  z-index: -1;
+}
+
+.lifecycleDownArrow {
+  z-index: 1;
+}
