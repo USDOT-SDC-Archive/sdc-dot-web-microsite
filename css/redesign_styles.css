@@ -90,3 +90,18 @@
 .currentDataInfoBox a {
   text-decoration: none;
 }
+
+.dataImgContainer {
+  height: 150px;
+  width: 150px;
+}
+
+.largeDataInfoCard {
+  height: 400px;
+  width: 280px
+}
+
+.smallDataInfoCard {
+  height: 320px;
+  width: 280px
+}
