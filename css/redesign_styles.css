@@ -122,6 +122,16 @@
   color: black;
 }
 
+.gettingStartedIconContainer {
+  width: 200px;
+  height: 200px;
+}
+
+.largeGettingStartedIconContainer {
+  width: 250px;
+  height: 250px;
+}
+
 .homeInfoCard {
   height: 380px;
 }
@@ -158,4 +168,8 @@
 
 .lifecyclePurpleBorder {
   border: solid #C39DEB 8px;
+}
+
+.fontWeightNormal {
+  font-weight: normal;
 }
