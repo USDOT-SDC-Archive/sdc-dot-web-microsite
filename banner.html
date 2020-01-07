@@ -4,6 +4,8 @@
     $('#' + current_page).addClass('usa-current');
     if (current_page == 'home_menu') {
       $('#last_hr').hide();
+    } else {
+      $('#nav-container').addClass('margin-bottom-neg-05');
     }
   });
 </script>
@@ -67,16 +69,17 @@
     </nav>
   </div>
   <hr>
-  <div class="usa-nav-container">
+  <div id="nav-container" class="usa-nav-container">
     <nav role="navigation">
       <ul class="usa-nav__primary usa-accordion">
         <li id="home_menu" class="usa-nav__primary-item"> <a class="usa-nav__link" href="index.html"><span>Home</span></a> </li>
         <li id="about_menu" class="usa-nav__primary-item"> <a class="usa-nav__link" href="about.html"><span>About SDC</span></a> </li>
         <li id="getting_started_menu" class="usa-nav__primary-item"> <a class="usa-nav__link" href="getting_started.html"><span>Getting Started</span></a> </li>
+        <li id="support_menu" class="usa-nav__primary-item"> <a class="usa-nav__link" href="support.html"><span>Support</span></a> </li>
         <li class="usa-nav__primary-item"> <a class="usa-nav__link" href="https://github.com/usdot-jpo-sdc" target="_blank"><span>GitHub Project</span> <img src="assets/img/external-link.svg" alt="" class="usa-header__primary-link-icon-social"></a> </li>
       </ul>
     </nav>
   </div>
-  <hr class="margin-top-0" id="last_hr">
+  <hr id="last_hr">
   </div>
 </header>

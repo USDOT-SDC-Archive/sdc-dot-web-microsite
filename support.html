@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- USWDS Styles -->
+  <link rel="stylesheet" href="assets/css/uswds.min.css">
+  <!-- SDC Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Redesign Styles -->
+  <link rel="stylesheet" href="css/redesign_styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#footer').load('footer.html');
+      $('#banner').load('banner.html');
+      $('#header').load('header.html');
+    });
+  </script>
+  <div id="header"></div>
+</head>
+
+<body>
+<div id="banner" data-current-page="support_menu"></div>
+<main>
+  <section>
+    <div class="grid-container">
+      <div class="grid-row grid-gap margin-y-5">
+        <div class="tablet:grid-col-2">
+          <nav aria-label="Secondary navigation">
+            <ul class="usa-sidenav">
+              <li class="usa-sidenav__item">
+                <a href="" class="usa-current">Training Materials</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="tablet:grid-col-10">
+          <h1 class="text-normal margin-top-0">Training Materials</h1>
+          <p class="line-height-sans-6 text-normal">
+            Content TBD
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer role="contentinfo">
+  <div id="footer"></div>
+</footer>
+<script src="assets/js/uswds.min.js"></script>
+</body>
+</html>
