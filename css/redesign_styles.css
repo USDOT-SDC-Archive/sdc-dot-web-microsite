@@ -133,14 +133,6 @@
   float: left
 }
 
-.lifecycleInfoCard {
-  z-index: -1;
-}
-
-.lifecycleDownArrow {
-  z-index: 1;
-}
-
 .lifecycleBlueBorder {
   border: solid #9DDFEB 8px;
 }
