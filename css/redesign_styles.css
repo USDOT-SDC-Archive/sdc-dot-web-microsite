@@ -162,3 +162,19 @@
   display: table-cell;
   vertical-align: middle;
 }
+
+.headerLargeText {
+  font-size: 50px;
+}
+
+.headerMediumText {
+  font-size: 30px;
+}
+
+.smallCard {
+  width: 280px;
+}
+
+.mediumCard {
+  width: 300px;
+}
