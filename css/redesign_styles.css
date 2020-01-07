@@ -124,7 +124,8 @@
 }
 
 .homeImgContainer {
-  height: 150px; width: 150px;
+  height: 150px;
+  width: 150px;
 }
 
 .lifecycleImgContainer {
@@ -160,8 +161,4 @@
   color: grey;
   display: table-cell;
   vertical-align: middle;
-}
-
-.fontWeightNormal {
-  font-weight: normal;
 }
