@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- SEO -->
+<meta name="description" content="The Secure Data Commons is an online data warehousing and analysis platform for transportation researchers. On this portal, researchers can take advantage of pre-established programming environments to access and analyze a growing set of transportation-related data sets.">
+<meta name="keywords" content="Secure Data Commons, USDOT, DOT, FHWA, Transportation Research, Datasets">
+<meta name="author" content="U.S. Department of Transportation">
+<!-- Disable tap highlight on IE -->
+<meta name="msapplication-tap-highlight" content="no">
+<title>Secure Data Commons</title>
+<!-- USWDS Styles -->
+<link rel="stylesheet" href="assets/css/uswds.min.css">
+<!-- SDC Styles -->
+<link rel="stylesheet" href="css/styles.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('#footer').load('footer.html');
+    $('#banner').load('banner.html');
+  });
+</script>
+</head>
+
+<body>
+<div id="banner" data-current-page="home_menu"></div>
+<main >
+  <section>
+    <div class="grid-container margin-5">
+      <div class="grid-row">
+        <div class="grid-col-6 margin-x-auto">
+          <h1>Log In to SDC</h1>
+          <br>
+          <p>
+              <b>You are accessing a U.S. Government information system</b>. This information system, including all related equipment, networks, and network devices, is provided for
+              U.S. Government-authorized use only. Unauthorized or improper use of this system is prohibited and may result in civil and criminal penalties or administrative
+              disciplinary action. The communications and data stored in or transiting this system may be, for any lawful Government purpose, monitored, recorded, and subject
+              to audit or investigation. By using this system, you understand and consent to such terms. For details on how we use your information, please see our
+              <a href="https://www.transportation.gov/dot-website-privacy-policy" target=”_blank”>Privacy Policy.</a>
+          </p>
+          <div class="usa-checkbox margin-y-10">
+            <input class="usa-checkbox__input" id="statement-agreement" type="checkbox" name="statement-agreement" value="agree" onchange="document.getElementById('proceed-button').disabled = !this.checked;">
+            <label class="usa-checkbox__label" for="statement-agreement">I agree to the statements above.</label>
+          </div>
+  
+          <button class="usa-button" id="proceed-button" onclick="window.location.href = 'https://portal.securedatacommons.com/register'" disabled>Proceed to Log In</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer role="contentinfo">
+  <div id="footer"></div>
+</footer>
+<script src="assets/js/uswds.min.js"></script>
+</body>
+</html>

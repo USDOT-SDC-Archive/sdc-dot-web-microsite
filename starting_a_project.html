@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- USWDS Styles -->
+  <link rel="stylesheet" href="assets/css/uswds.min.css">
+  <!-- SDC Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Redesign Styles -->
+  <link rel="stylesheet" href="css/redesign_styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#footer').load('footer.html');
+      $('#banner').load('banner.html');
+      $('#header').load('header.html');
+    });
+  </script>
+  <div id="header"></div>
+</head>
+
+<body>
+<div id="banner" data-current-page="getting_started_menu"></div>
+<main >
+  <section>
+    <div class="grid-container">
+      <div class="grid-row grid-gap margin-y-5">
+        <div class="tablet:grid-col-2">
+          <nav aria-label="Secondary navigation">
+            <ul class="usa-sidenav">
+              <li class="usa-sidenav__item">
+                <a href="getting_started.html">What you need to know</a>
+              </li>
+              <li class="usa-sidenav__item">
+                <a href="" class="usa-current">Starting a Project</a>
+              </li>
+              <li class="usa-sidenav__item">
+                <a href="getting_data_to_sdc.html">Getting Data to SDC</a>
+              </li>
+              <li class="usa-sidenav__item">
+                <a href="conducting_analysis.html">Conducting Analysis</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="tablet:grid-col-10">
+          <h1 class="text-normal margin-top-0">Starting a Project in SDC - for Project Owners</h1>
+          <p class="line-height-sans-6 text-normal">
+            <b>Managing and sharing transportation research data, securely, is now easier than ever.</b> The USDOT Secure Data Commons (SDC)
+            is an access-controlled, cloud-based data environment that enables users to conduct analyses and develop new tools 
+            around emerging sources of transportation data. The SDC stores transportation data made available by participating 
+            data providers and grants access to approved researchers to work with these datasets.
+          </p>
+          <p class="text-normal" style="font-size: 18px;">Put SDC to Work for You</p>
+          <h3>Cost of using the SDC</h3>
+        </div>  
+        <div class="tablet:grid-offset-2 tablet:grid-col-6">
+          <p class="text-normal line-height-sans-6">
+            Click on the cost estimator button to create an estimate for your project’s use of the SDC. The SDC tracks project-related usage 
+            of the system and has a model to charge projects for their use of common resources. In addition, projects can select levels of 
+            support from the SDC team to achieve their business outcomes.
+          </p>
+        </div>
+        <div class="tablet:grid-offset-1 tablet:grid-col-3">
+          <div class="border border-primary-light bg-primary-lighter">
+            <div class="margin-3">
+              <button  onclick="window.open('https://securedatacommons.atlassian.net/wiki/spaces/SD/pages/72351772/Cost+Estimator')" class="usa-button">Estimate the Cost for Your Project</button>
+              <p class="text-normal">See how much your project might cost based on your need</p>
+            </div>
+          </div>
+        </div>
+        <div class="tablet:grid-offset-2 tablet:grid-col-10">
+          <h3>Is SDC Right for My Project?</h3>
+          <p class="text-normal">
+            Depends on the needs and requirements of the project. See below for a table of questions 
+            <br> that help make a determination of SDC suitability
+          </p>
+        </div>
+        <div class="tablet:grid-offset-2 tablet:grid-col-10">
+          <table id="project-table">
+            <tr >
+              <th>Questions</th>
+              <th>Yes</th>
+              <th>No</th>
+            </tr>
+            <tr>
+              <td class="firstCol">Does the project generate data that needs to be access-controlled?</td>
+              <td class="greenTableBox"><i class="fa fa-check"></i>SDC is a good option for managing access to datasets</td>
+              <td><i class="fa fa-times"></i>Project-level data management may be sufficient</td>
+            </tr>
+            <tr>
+              <td class="firstCol">Is there value in making the project data and tools available to other researchers in the transportation community?</td>
+              <td class="greenTableBox"><i class="fa fa-check"></i>SDC is a good option for the project since it includes the ability to share data, code and tools with researchers</td>
+              <td><i class="fa fa-times"></i>Project-level data management may be sufficient</td>
+            </tr>
+            <tr>
+              <td class="firstCol">Does the project generate or need to manage extremely sensitive data?</td>
+              <td><i class="fa fa-times"></i>SDC is not a good option since it is not set up for managing extremely sensitive data</td>
+              <td class="greenTableBox">
+                <i class="fa fa-check"></i>
+                If the project manages only moderately sensitive data, SDC is a good option.
+                <br><br>
+                If data is not sensitive, SDC is not required.  Public data hubs may be a better option (like the ITS Data Hub)
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="tablet:grid-offset-2 tablet:grid-col-6 margin-top-2">
+          <h3>Starting a Project</h3>
+          <p class="text-normal">
+            The SDC admin team works with the project owner to introduce the data providers and analysts to the SDC and get your project up and running.
+          </p>
+        </div>
+        <div class="tablet:grid-col-3 margin-top-6 margin-left-8">
+          <div class="border border-primary-light bg-primary-lighter" style="width: 300px">
+            <div class="margin-1">
+              <img class="square-10 margin-left-neg-1 float-left" src="assets/redesign_svgs/SDC_Icon_Lifecycle.svg" alt="Lifecycle icon">
+              <p class="text-normal" style="width: 280px">Each SDC project goes through a standard lifecycle which prepares them for success within the SDC.</p>
+              <div>
+                <a href="sdc_lifecycle.html" class="text-no-underline">See what this process may look like for your project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tablet:grid-offset-2 tablet:grid-col-6 margin-top-2">
+          <h3>What's next?</h3>
+          <p class="text-normal">
+            As a project owner interested in joining the SDC, use the steps below to get started:
+          </p>
+        </div>
+        <div class="tablet:grid-offset-2 tablet:grid-col-3">
+          <div class="nextStepsBox">
+            <div class="margin-2">
+              <div class="nextStepsIconContainer margin-x-auto">
+                <img src="assets/redesign_svgs/SDC_Icon_Number1.svg" alt="Number one icon">
+              </div>
+              <p class="margin-top-2 text-normal">Use the <a target="_blank" href="https://securedatacommons.atlassian.net/wiki/spaces/SD/pages/72351772/Cost+Estimator">Cost estimator</a> 
+              to get an idea of what it would cost to host your data in SDC</p>
+            </div>
+          </div>
+        </div>
+        <div class="tablet:grid-col-3 margin-left-4">
+          <div class="nextStepsBox">
+            <div class="margin-2">
+              <div class="nextStepsIconContainer margin-x-auto">
+                <img src="assets/redesign_svgs/SDC_Icon_Number2.svg" alt="Number one icon">
+              </div>
+              <p class="margin-top-2 text-normal">
+                Coming soon, enablement services offerings for you and your team.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tablet:grid-col-3 margin-left-4">
+          <div class="nextStepsBox">
+            <div class="margin-2">
+              <div class="nextStepsIconContainer margin-x-auto">
+                <img src="assets/redesign_svgs/SDC_Icon_Number3.svg" alt="Number one icon">
+              </div>
+              <p class="text-normal">Speak with a member of the SDC team to answer any additional questions you have and start the planning process.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer role="contentinfo">
+    <div class="grid-container">
+        <div class="grid-row grid-gap">
+            <div class="grid-col-12 tablet:grid-col-4">
+                <a href="https://transportation.gov"><img id="dot_logo_footer" src="images/dot_logo.png" alt="Department of Transportation logo"></a>
+                <h2>USDOT Secure Data Commons Platform</h2>
+                <p><a href="https://github.com/usdot-jpo-sdc" target="_blank">VIEW THIS PROJECT ON GITHUB</a></p>
+            </div> <!-- /.grid-col -->
+            <div class="grid-col-12 tablet:grid-col-6 tablet:grid-offset-2">
+                <div class="grid-row grid-gap">
+                    <div class="grid-col-12 tablet:grid-col-6">
+                        <ul class="usa-list usa-list--unstyled">
+                            <li><a href="https://www.fhwa.dot.gov/privacy.cfm">Privacy Policy</a></li>
+                            <li><a href="https://www.fhwa.dot.gov/foia/">Freedom of Information Act (FOIA)</a></li>
+                            <li><a href="https://www.fhwa.dot.gov/accessibility/">Accessibility</a></li>
+                            <li><a href="https://www.fhwa.dot.gov/webpolicies/publishschedule.cfm">Web Policies &amp; Notices</a></li>
+                            <li><a href="https://www.transportation.gov/civil-rights/civil-rights-awareness-enforcement/no-fear-act">No Fear Act</a></li>
+                        </ul>
+                    </div> <!-- /.grid-col -->
+                    <div class="grid-col-12 tablet:grid-col-6">
+                        <ul class="usa-list usa-list--unstyled">
+                            <li><a href="https://www.oig.dot.gov/Hotline">Report Waste, Fraud and Abuse</a></li>
+                            <li><a href="https://www.transportation.gov/">U.S. Department of Transportation</a></li>
+                            <li><a href="https://www.usa.gov/">USA.gov</a></li>
+                            <li><a href="https://www.whitehouse.gov/">WhiteHouse.gov</a></li>
+                        </ul>
+                    </div> <!-- /.grid-col -->
+                </div> <!-- /.grid-row -->
+            </div> <!-- /.grid-col -->
+        </div> <!-- /.grid-row -->
+    </div> <!-- /.grid-container -->
+</footer>
+<script src="assets/js/uswds.min.js"></script>
+</body>
+</html>

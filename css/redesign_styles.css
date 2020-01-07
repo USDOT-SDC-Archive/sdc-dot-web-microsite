@@ -1,0 +1,164 @@
+#project-table table {
+  width: 100%;
+}
+
+#project-table td {
+  border: 1px solid #73b3e7;
+  text-align: left;
+  padding: 8px;
+}
+
+#project-table th {
+  background-color: #E5E5E5;
+  border: 1px solid #73b3e7;
+  text-align: center;
+  font-size: large;
+} 
+
+#project-table i {
+  font-size:20px;
+}
+
+.firstCol {
+  font-weight: bold;
+  background-color: #E5E5E5;
+}
+
+.greenTableBox {
+  background-color: rgb(190, 243, 190);
+}
+
+.nextStepsBox {
+  background-color: #ECF4FA;
+  border-radius: 25px;
+  width: 300px;
+  height: 200px
+}
+
+.nextStepsBox a {
+  text-decoration: none;
+}
+
+.nextStepsIconContainer {
+  width: 100px;
+  height: 100px;
+}
+
+.aboutInfoCard {
+  height: 260px;
+}
+
+.aboutImgContainer {
+  height: 150px;
+  width: 150px;
+}
+
+.analysisNextStepsBox{
+  background-color: #ECF4FA;
+  border-radius: 25px;
+  width: 300px;
+  height: 300px
+}
+
+.analysisImgContainer {
+  height: 150px;
+  width: 150px;
+}
+
+.analysisInfoCard {
+  height: 600px;
+  width: 280px
+}
+
+.blueBox {
+  background-color: #A2EFF9;
+}
+
+.currentDataInfoBox a {
+  text-decoration: none;
+}
+
+.dataImgContainer {
+  height: 150px;
+  width: 150px;
+}
+
+.largeDataInfoCard {
+  height: 400px;
+  width: 280px
+}
+
+.smallDataInfoCard {
+  height: 320px;
+  width: 280px
+}
+
+.gettingStartedInfoCard {
+  height: 280px;
+}
+
+.gettingStartedInfoCard a {
+  text-decoration: none;
+}
+
+.gettingStartedInfoCard ul {
+  color: black;
+}
+
+.gettingStartedIconContainer {
+  width: 200px;
+  height: 200px;
+}
+
+.largeGettingStartedIconContainer {
+  width: 250px;
+  height: 250px;
+}
+
+.homeInfoCard {
+  height: 380px;
+}
+
+.homeInfoCard a {
+  text-decoration: none;
+}
+
+.homeImgContainer {
+  height: 150px;
+  width: 150px;
+}
+
+.lifecycleImgContainer {
+  height: 120px;
+  width: 120px;
+  float: left
+}
+
+.lifecycleBlueBorder {
+  border: solid #9DDFEB 8px;
+}
+
+.lifecycleGreenBorder {
+  border: solid #98D036 8px;
+}
+
+.lifecyclePurpleBorder {
+  border: solid #C39DEB 8px;
+}
+
+.lifecycleDownArrowIconContainer {
+  background: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 0 5px 2px lightgray;
+  text-align: center;
+  display: table;
+}
+
+.lifecycleDownArrowIcon {
+  font-size:30px;
+  color: grey;
+  display: table-cell;
+  vertical-align: middle;
+}

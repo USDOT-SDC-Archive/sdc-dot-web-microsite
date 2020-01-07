@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- USWDS Styles -->
+  <link rel="stylesheet" href="assets/css/uswds.min.css">
+  <!-- SDC Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Redesign Styles -->
+  <link rel="stylesheet" href="css/redesign_styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#footer').load('footer.html');
+      $('#banner').load('banner.html');
+      $('#header').load('header.html');
+    });
+  </script>
+  <div id="header"></div>
+</head>
+
+<body>
+<div id="banner" data-current-page="getting_started_menu"></div>
+<main >
+  <section>
+    <div class="grid-container">
+      <div class="grid-row grid-gap margin-y-5">
+        <div class="tablet:grid-col-2">
+          <nav aria-label="Secondary navigation">
+            <ul class="usa-sidenav">
+              <li class="usa-sidenav__item">
+                <a href="getting_started.html">What you need to know</a>
+              </li>
+              <li class="usa-sidenav__item">
+                <a href="starting_a_project.html">Starting a Project</a>
+              </li>
+              <li class="usa-sidenav__item">
+                <a href="getting_data_to_sdc.html">Getting Data to SDC</a>
+              </li>
+              <li class="usa-sidenav__item">
+                <a href="" class="usa-current">Conducting Analysis</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="tablet:grid-col-10">
+          <h1 class="text-normal margin-top-0 margin-bottom-1">Conducting Analysis in SDC</h1>
+          <p class="text-normal"><strong>As a data analyst, work within the USDOT Secure Data Commons (SDC) to share code and data, upload datasets, and export approved derived analyses.</strong> Through SDC, you can:</p>
+          <ul>
+            <li>Share code and data with other analysts</li>
+            <li>Upload your own datasets</li>
+            <li>Export approved derived analysis</li>
+          </ul>
+          <p class="text-normal">We’ll provide you with a cloud-based workstation with preloaded programming environments and software which grants you 
+            access to the data lake and data warehouse. The workstation also includes commercially available tools – no
+             local software or tool installation needed!
+          </p>
+        </div>
+        <div class="tablet:grid-offset-2 tablet:grid-col-7">
+          <h3>Analytical Tools and Query Languages Supported</h3>
+          <p class="text-normal">
+            The SDC platform provides on-demand access to popular programming and statistical tool packages
+            for cloud-based processing (for experienced analysts). Other, nonstandard software can be 
+            installed upon request, both individually and across user groups. Analysts may also use existing software licenses.
+          </p>
+          <div class="blueBox">
+            <h4 class="padding-y-1 padding-left-1">Analytical Tools</h4>
+          </div>
+          <div class="float-left">
+            <img class="height-6 width-15" src="images/power_bi_logo.jpg" alt="Power BI logo">
+          </div>
+          <p class="text-normal text-center">Custom options available<br>upon request</p>
+        </div>
+        <div class="tablet:grid-offset-2 tablet:grid-col-7">
+          <div class="blueBox">
+            <h4 class="padding-y-1 padding-left-1">Query Language</h4>
+          </div>
+          <div class="float-left">
+            <img class="height-6 width-15" src="images/r_studio_logo.png" alt="R Studio logo">
+          </div>
+          <div class="margin-left-5 float-left">
+            <img class="height-6 width-15" src="images/python_logo.png" alt="Python logo">
+          </div>
+          <div class="margin-left-5 float-left">
+            <img class="height-6 width-10" src="images/sql_logo.png" alt="SQL logo">
+          </div>
+          <p class="text-normal text-center">Custom options available<br>upon request</p>
+          <h3 class="margin-top-10">Types of Datasets</h3>
+          <p class="text-normal">
+            The SDC platform provides a data lake of transportation-related structured, semi-structured, and unstructured datasets 
+            that are stored in raw, curated, and published formats. Each dataset has different data agreements based on the
+            complexity and sensitivity of the data. Access to specific data is approved by data providers – 
+            learn more about specific dataset formats below:
+          </p>
+        </div>
+        <div class="tablet:grid-offset-2 tablet:grid-col-10">
+          <div class="blueBox">
+            <h4 class="padding-y-1 padding-left-1">Dataset Formats</h4>
+          </div>
+        </div>
+        <div class="tablet:grid-offset-2 tablet:gird-col-3">
+          <div class="analysisInfoCard border border-primary-light" >
+            <div class="margin-1">
+              <h3>Raw Datasets</h3>
+              <div class="analysisImgContainer margin-x-auto">
+                <img src="assets/redesign_svgs/SDC_Icon_Raw_Datasets.svg" alt="Magnifying glass icon">
+              </div>
+              <p class="text-normal">
+                Unaltered data are stored in their native/original ‘as-is’ (raw) format. Uploads can be continuous through
+                streaming sources (i.e. APIs or sensors) or through one-time uploads from external sources. 
+                This data can be structured (databases, logs, financial data), semi-structured (HTML, XML, RDF, CSV), 
+                or unstructured (images, PDFs, Word documents). Raw data cannot be copied or exported.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tablet:grid-col-3">
+          <div class="analysisInfoCard border border-primary-light margin-left-2" >
+            <div class="margin-1">
+              <h3>Curated</h3>
+              <div class="analysisImgContainer margin-x-auto">
+                <img src="assets/redesign_svgs/SDC_Icon_Curated.svg" alt="Funnel icon">
+              </div>
+              <p class="text-normal">
+                Data curation is the process of integrating raw data collected from various sources and annotating and 
+                presenting the data so that the value of the data is maintained and made available for reuse and 
+                preservation. For researchers and data scientists, curated datasets enable data discovery and 
+                retrieval and maintain data quality. During the curation process, data are transformed 
+                from unstructured and semi-structured formats to structured formats; and data deduplication, 
+                obfuscation, and cleansing processes are conducted – <strong>resulting in high-quality data that enables 
+                researchers to elicit meaningful insights.</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tablet:grid-col-3">
+          <div class="analysisInfoCard border border-primary-light margin-left-7" >
+            <div class="margin-1">
+              <h3>Published</h3>
+              <div class="analysisImgContainer margin-x-auto">
+                <img src="assets/redesign_svgs/SDC_Icon_Published.svg" alt="Magnifying glass icon">
+              </div>
+              <p class="text-normal">
+                Researchers create published datasets to disclose their research and allow other users to verify 
+                and reuse the data beyond their original purpose. Published datasets are a result of combining 
+                analyses on curated datasets in the SDC platform with other datasets or algorithms owned or created 
+                by a researcher or data scientist.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tablet:grid-offset-2 tablet:grid-col-12">
+          <h3>What's next?</h3>
+          <p class="text-normal">As a data analyst planning to do analysis in the SDC, use the steps below to get started:</p>
+        </div>
+        <div class="tablet:grid-offset-2 tablet:grid-col-3">
+          <div class="analysisNextStepsBox">
+            <div class="margin-2">
+              <div class="nextStepsIconContainer margin-x-auto">
+                <img src="assets/redesign_svgs/SDC_Icon_Number1.svg" alt="Number one icon">
+              </div>
+              <p class="margin-top-2 text-normal">
+                <a href="SDCAccessRequestForm.pdf" target="_blank" class="text-no-underline">Download the access request form</a>, 
+                fill out the required details and send an email to 
+                <a href="mailto:support@securedatacommons.com" class="text-no-underline">support@securedatacommons.com</a>. 
+                Once approved, we will send you an email with the instructions for accessing the platform.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tablet:grid-col-3 margin-left-4">
+          <div class="analysisNextStepsBox">
+            <div class="margin-2">
+              <div class="nextStepsIconContainer margin-x-auto">
+                <img src="assets/redesign_svgs/SDC_Icon_Number2.svg" alt="Number one icon">
+              </div>
+              <p class="margin-top-2 text-normal">
+                Follow the instructions in the Welcome Email from the SDC. Review the Data Analyst User Guides.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tablet:grid-col-3 margin-left-4">
+            <div class="analysisNextStepsBox">
+              <div class="margin-2">
+                <div class="nextStepsIconContainer margin-x-auto">
+                  <img src="assets/redesign_svgs/SDC_Icon_Number3.svg" alt="Number one icon">
+                </div>
+                <p class="margin-top-2 text-normal">
+                  Coming soon, enablement services offerings for you and your team.
+                </p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer role="contentinfo">
+  <div id="footer"></div>
+</footer>
+<script src="assets/js/uswds.min.js"></script>
+</body>
+</html>

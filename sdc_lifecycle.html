@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- USWDS Styles -->
+  <link rel="stylesheet" href="assets/css/uswds.min.css">
+  <!-- SDC Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Redesign Styles -->
+  <link rel="stylesheet" href="css/redesign_styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#footer').load('footer.html');
+      $('#banner').load('banner.html');
+      $('#header').load('header.html');
+    });
+  </script>
+  <div id="header"></div>
+</head>
+
+<body>
+<div id="banner" data-current-page="about_menu"></div>
+<main >
+  <section>
+    <div class="grid-container">
+      <div class="grid-row grid-gap margin-y-5">
+        <div class="tablet:grid-col-2">
+          <nav aria-label="Secondary navigation">
+            <ul class="usa-sidenav">
+              <li class="usa-sidenav__item">
+                <a href="about.html">What is SDC?</a>
+              </li>
+              <li class="usa-sidenav__item">
+                <a href="" class="usa-current">SDC Lifecycle</a>
+              </li>
+              <li class="usa-sidenav__item">
+                <a href="current_data.html">Current Data Available</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="tablet:grid-col-10">
+          <h1 class="text-normal margin-top-0 margin-bottom-1">SDC Lifecycle</h1>
+          <p class="text-normal">Each project in the SDC goes through a standard lifecycle of activities.</p>
+        </div>
+        <div class="z-bottom tablet:grid-offset-2 tablet:grid-col-8 margin-bottom-neg-2" >
+          <div class="lifecycleBlueBorder" >
+            <div class="margin-2 clearfix">
+              <h2 class="margin-bottom-0">Prospective</h2>
+              <div class="lifecycleImgContainer margin-top-neg-2 margin-bottom-neg-2">
+                <img src="assets/redesign_svgs/SDC_Icon_Prospective.svg" alt="Head icon">
+              </div>
+              <p class="text-normal padding-top-2">
+                Identification of research projects that could potentially use the SDC. Research projects include a 
+                clear objective and planned set of data providers and data analysts
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tablet:grid-offset-2 tablet:grid-col-8">
+          <div class="margin-x-auto margin-bottom-neg-10 lifecycleDownArrowIconContainer">
+              <i class="fa fa-angle-double-down lifecycleDownArrowIcon"></i>
+          </div>
+        </div>
+        <div class="z-bottom tablet:grid-offset-2 tablet:grid-col-8 margin-top-neg-2 margin-bottom-neg-2">
+          <div class="lifecycleBlueBorder" >
+            <div class="margin-2 clearfix">
+              <h2 class="margin-bottom-0">Planned</h2>
+              <div class="lifecycleImgContainer margin-top-neg-2 margin-bottom-neg-2">
+                <img src="assets/redesign_svgs/SDC_Icon_Planned.svg" alt="Document and pencil icon">
+              </div>
+              <p class="text-normal padding-top-2">            
+                In the planning phase, the SDC team works with the prospective project owner and their technical 
+                representatives to understand the objective, timelines, data provider and data analysts needs. 
+                In this phase, the SDC team and the project team defines the high-level requirements for the project
+                and assess suitability of the platform.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tablet:grid-offset-2 tablet:grid-col-8">
+          <div class="margin-x-auto margin-bottom-neg-10 lifecycleDownArrowIconContainer">
+            <i class="fa fa-angle-double-down lifecycleDownArrowIcon"></i>
+          </div>
+        </div>
+        <div class="z-bottom tablet:grid-offset-2 tablet:grid-col-8 margin-top-neg-2 margin-bottom-neg-2">
+          <div class="lifecycleBlueBorder" >
+            <div class="margin-2 clearfix">
+              <h2 class="margin-bottom-0">Discovery</h2>
+              <div class="lifecycleImgContainer margin-top-neg-2 margin-bottom-neg-2">
+                <img src="assets/redesign_svgs/SDC_Icon_Discovery.svg" alt="Delivery icon">
+              </div>
+              <p class="text-normal padding-top-2">            
+                  In this phase, the SDC team works with the project owner to define the detailed requirements for the project. This phase also includes gathering the documentation required for the data sets in the SDC.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tablet:grid-offset-2 tablet:grid-col-8">
+          <div class="margin-x-auto margin-bottom-neg-10 lifecycleDownArrowIconContainer">
+              <i class="fa fa-angle-double-down lifecycleDownArrowIcon"></i>
+          </div>
+        </div>
+        <div class="z-bottom tablet:grid-offset-2 tablet:grid-col-8 margin-top-neg-2 margin-bottom-neg-2">
+          <div class="lifecycleGreenBorder" >
+            <div class="margin-2 clearfix">
+              <h2 class="margin-bottom-0">Onboarding</h2>
+              <div class="lifecycleImgContainer margin-top-neg-2 margin-bottom-neg-2">
+                <img src="assets/redesign_svgs/SDC_Icon_Onboarding.svg" alt="People icon">
+              </div>
+              <p class="text-normal padding-top-2">
+                This phase brings the project into the SDC platform by implementing the requirements defined
+                in the discovery phase. At the end of this phase, data analysts will be able to work on the 
+                datasets available to them as part of the project          
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tablet:grid-offset-2 tablet:grid-col-8">
+          <div class="margin-x-auto margin-bottom-neg-10 lifecycleDownArrowIconContainer">
+              <i class="fa fa-angle-double-down lifecycleDownArrowIcon"></i>
+          </div>
+        </div>
+        <div class="z-bottom tablet:grid-offset-2 tablet:grid-col-8 margin-top-neg-2 margin-bottom-neg-2">
+          <div class="lifecycleGreenBorder">
+            <div class="margin-2 clearfix">
+              <h2 class="margin-bottom-0">Active</h2>
+              <div class="lifecycleImgContainer margin-top-neg-2 margin-bottom-neg-2">
+                <img src="assets/redesign_svgs/SDC_Icon_Active.svg" alt="Circle icon">
+              </div>
+              <p class="text-normal padding-top-2">
+                During this phase, the SDC platform is being used by data analysts to achieve their research objective         
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tablet:grid-offset-2 tablet:grid-col-8">
+          <div class="margin-x-auto margin-bottom-neg-10 lifecycleDownArrowIconContainer">
+              <i class="fa fa-angle-double-down lifecycleDownArrowIcon"></i>
+          </div>
+        </div>
+        <div class="z-bottom tablet:grid-offset-2 tablet:grid-col-8 margin-top-neg-2 margin-bottom-neg-2">
+          <div class="lifecyclePurpleBorder" >
+            <div class="margin-2 clearfix">
+              <h2 class="margin-bottom-0">Export</h2>
+              <div class="lifecycleImgContainer margin-top-neg-2 margin-bottom-neg-2">
+                <img src="assets/redesign_svgs/SDC_Icon_Export.svg" alt="Database icon">
+              </div>
+              <p class="text-normal padding-top-2">
+                This phase concludes the active research work in the SDC. At the direction of the project owner, 
+                the SDC team will start the predefined approval process for final export of project-related data and files        
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tablet:grid-offset-2 tablet:grid-col-8">
+          <div class="margin-x-auto margin-bottom-neg-10 lifecycleDownArrowIconContainer">
+              <i class="fa fa-angle-double-down lifecycleDownArrowIcon"></i>
+          </div>
+        </div>
+        <div class="z-bottom tablet:grid-offset-2 tablet:grid-col-8 margin-top-neg-2">
+          <div class="lifecyclePurpleBorder" >
+            <div class="margin-2 clearfix">
+              <h2 class="margin-bottom-0">Retire</h2>
+              <div class="lifecycleImgContainer margin-top-neg-2 margin-bottom-neg-2">
+                <img src="assets/redesign_svgs/SDC_Icon_Retire.svg" alt="Document icon">
+              </div>
+              <p class="text-normal padding-top-2">
+                In this phase, project data will be archived as per the records retention schedule       
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer role="contentinfo">
+  <div id="footer"></div>
+</footer>
+<script src="assets/js/uswds.min.js"></script>
+</body>
+</html>
