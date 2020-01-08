@@ -54,8 +54,8 @@
 .analysisNextStepsBox{
   background-color: #ECF4FA;
   border-radius: 25px;
-  width: 300px;
-  height: 300px
+  width: 270px;
+  height: 270px
 }
 
 .analysisImgContainer {
@@ -65,7 +65,6 @@
 
 .analysisInfoCard {
   height: 600px;
-  width: 280px
 }
 
 .blueBox {
