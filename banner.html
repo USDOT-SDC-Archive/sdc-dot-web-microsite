@@ -4,8 +4,6 @@
     $('#' + current_page).addClass('usa-current');
     if (current_page == 'home_menu') {
       $('#last_hr').hide();
-    } else {
-      $('#nav-container').addClass('margin-bottom-neg-05');
     }
   });
 </script>
@@ -42,35 +40,19 @@
   </div>
 </div>
 <div class="usa-overlay"></div>
-<header class="usa-header usa-header--basic" role="banner">
-    <div class="usa-banner__header" id="dot-header">
-        <div class="usa-banner__inner">
-            <a href="https://transportation.gov"><img id="dot_logo" src="images/dot_logo.png" alt="Department of Transportation logo"></a>
-        </div>
-    </div>
-  <div class="usa-nav-container">
-    <div class="usa-navbar">
-      <div class="usa-logo" id="basic-logo"> <em class="usa-logo__text"><a href="index.html" title="Home" aria-label="Home">Secure Data Commons</a></em> </div>
-      <button class="usa-menu-btn">Menu</button>
-    </div>
-    <nav role="navigation" class="usa-nav">
-      <a href="https://portal.securedatacommons.com/register" class="usa-button">Login</a>
-      <a class="margin-bottom-2 text-primary text-no-underline" href="files/SDCAccessRequestForm.pdf" target="_blank">Request Access</a>
-      <div class="usa-nav__secondary">
-          <div class="dh-header__secondary-links">
-              <ul class="usa-nav__secondary-links">
-                  <li class="usa-nav__secondary-item"><a href="https://www.its.dot.gov/" target="_blank">ABOUT ITS JPO</a></li>
-                  <li class="usa-nav__secondary-item"><a href="https://www.transportation.gov/mission/about-us" target="_blank">ABOUT U.S. DOT</a></li>
-                  <li class="usa-nav__secondary-item"><a href="https://www.transportation.gov/briefingroom" target="_blank">U.S. DOT BRIEFING ROOM</a></li>
-                  <li class="usa-nav__secondary-item"><a href="https://www.transportation.gov/our-activities" target="_blank">U.S. DOT ACTIVITIES</a></li>
-              </ul>
-          </div>
+<header id="header" class="usa-header usa-header--extended" role="banner">
+  <div class="usa-banner__header" id="dot-header">
+      <div class="usa-banner__inner">
+          <a href="https://transportation.gov"><img id="dot_logo" src="images/dot_logo.png" alt="Department of Transportation logo"></a>
       </div>
-    </nav>
   </div>
-  <hr class="margin-bottom-0 margin-top-0">
-  <div id="nav-container" class="usa-nav-container">
-    <nav role="navigation">
+  <div class="usa-navbar">
+    <div class="usa-logo" id="basic-logo"> <em class="usa-logo__text"><a href="index.html" title="Home" aria-label="Home">Secure Data Commons</a></em> </div>
+    <button class="usa-menu-btn">Menu</button>
+  </div>
+  <nav role="navigation" class="usa-nav">
+    <div class="usa-nav__inner">
+      <button class="usa-nav__close"><img src="assets/img/close.svg" alt="close"></button>
       <ul class="usa-nav__primary usa-accordion">
         <li id="home_menu" class="usa-nav__primary-item"> <a class="usa-nav__link" href="index.html"><span class="text-primary-dark">Home</span></a> </li>
         <li id="about_menu" class="usa-nav__primary-item"> <a class="usa-nav__link" href="about.html"><span class="text-primary-dark">About SDC</span></a> </li>
@@ -78,8 +60,21 @@
         <li id="support_menu" class="usa-nav__primary-item"> <a class="usa-nav__link" href="support.html"><span class="text-primary-dark">Support</span></a> </li>
         <li class="usa-nav__primary-item"> <a class="usa-nav__link" href="https://github.com/usdot-jpo-sdc" target="_blank"><span class="text-primary-dark">GitHub Project</span> <img src="assets/img/external-link.svg" alt="" class="usa-header__primary-link-icon-social"></a> </li>
       </ul>
-    </nav>
-  </div>
-  <hr id="last_hr">
-  </div>
+      <div class="usa-nav__secondary">
+        <div class="dh-header__secondary-links">
+          <ul class="usa-nav__secondary-links">
+            <li class="usa-nav__secondary-item"><a href="https://www.its.dot.gov/" target="_blank">ABOUT ITS JPO</a></li>
+            <li class="usa-nav__secondary-item"><a href="https://www.transportation.gov/mission/about-us" target="_blank">ABOUT U.S. DOT</a></li>
+            <li class="usa-nav__secondary-item"><a href="https://www.transportation.gov/briefingroom" target="_blank">U.S. DOT BRIEFING ROOM</a></li>
+            <li class="usa-nav__secondary-item"><a href="https://www.transportation.gov/our-activities" target="_blank">U.S. DOT ACTIVITIES</a></li>
+          </ul>
+        </div>
+        <div class="margin-top-7 float-right margin-bottom-neg-3">
+          <a href="https://portal.securedatacommons.com/register" class="usa-button">Login</a>
+          <a class="margin-bottom-2 text-primary text-no-underline" href="files/SDCAccessRequestForm.pdf" target="_blank">Request Access</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 </header>
+<hr id="last_hr" class="margin-top-0" style>

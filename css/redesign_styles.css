@@ -178,3 +178,7 @@
 .mediumCard {
   width: 300px;
 }
+
+#last_hr {
+  border-top: 1px solid lightgrey;
+}
