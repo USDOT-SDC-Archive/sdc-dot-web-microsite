@@ -20,108 +20,106 @@
 
 <body>
 <div id="banner" data-current-page="about_menu"></div>
-<main >
-  <section>
-    <div class="grid-container">
-      <div class="grid-row grid-gap margin-top-5">
-        <div class="tablet:grid-col-2">
-          <nav aria-label="Secondary navigation">
-            <ul class="usa-sidenav">
-              <li class="usa-sidenav__item">
-                <a href="about.html">What is SDC?</a>
-              </li>
-              <li class="usa-sidenav__item">
-                <a href="sdc_lifecycle.html">SDC Lifecycle</a>
-              </li>
-              <li class="usa-sidenav__item">
-                <a href="" class="usa-current">Current Data Available</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="tablet:grid-col-9">
-          <h1 class="text-normal margin-top-0 margin-bottom-1">Current Data Available</h1>
-          <p class="text-normal">The SDC platform features datasets for the following projects – check back soon as new projects (datasets) are added:</p>
-        </div>
+<main class="usa-layout-docs usa-section" id="main-content">
+  <div class="grid-container">
+    <div class="grid-row grid-gap">
+      <aside class="usa-layout-docs__sidenav desktop:grid-col-3">
+        <nav aria-label="Secondary navigation">
+          <ul class="usa-sidenav">
+            <li class="usa-sidenav__item">
+              <a href="about.html">What is SDC?</a>
+            </li>
+            <li class="usa-sidenav__item">
+              <a href="sdc_lifecycle.html">SDC Lifecycle</a>
+            </li>
+            <li class="usa-sidenav__item">
+              <a href="" class="usa-current">Current Data Available</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="usa-layout-docs__main desktop:grid-col-9">
+        <h1 class="text-normal margin-top-0 margin-bottom-1">Current Data Available</h1>
+        <p class="text-normal">The SDC platform features datasets for the following projects – check back soon as new projects (datasets) are added:</p>
       </div>
-      <div class="grid-row margin-bottom-5 grid-gap">
-        <div class="tablet:grid-col-2 tablet:grid-offset-2">
-          <img class="margin-x-auto margin-bottom-1 display-block" src="images/waze_logo_1.png" alt="Waze logo">
-          <p class="text-normal">Waze — Connected Citizens Program</p>
-        </div>
-        <div class="tablet:grid-col-2">
-          <img class="margin-x-auto margin-bottom-1 display-block" src="images/connected_vehicle_logo.png" alt="Waze logo">
-          <p class="text-normal">Connected Vehicle Pilot Deployment Program</p>
-        </div>
-        <div class="tablet:grid-col-2">
-          <img class="margin-x-auto margin-bottom-1 display-block" src="images/atri_logo.jpg" alt="Waze logo">
-          <p class="text-normal">American Transportation Research Institute Freight Mobility Initiative Program</p>
-        </div>
-      </div> <!-- grid-row -->
-      <div class="grid-row grid-gap margin-bottom-1">
-        <div class="tablet:grid-col-9 tablet:grid-offset-2">
-          <hr class="border-primary-light"></hr>
-          <h3>Waze — Connected Citizens Program</h3>
-        </div>
-        <div class="tablet:grid-col-3 tablet:grid-offset-2">
-          <img class="margin-x-auto margin-bottom-1 display-block" src="images/waze_logo_2.png" alt="Waze logo">
-        </div>
-        <div class="tablet:grid-col-6">
-          <p class="currentDataInfoBox line-height-sans-6 text-normal">
-            The U.S. Department of Transportation’s (USDOT) 
-            <a starget="_blank" href="https://www.transportation.gov/content/safety-data-initiative">Safety Data Initiative (SDI)</a>
-             is a cross-cutting, collaborative effort within DOT, led by the Office of the Secretary of Transportation (OST). 
-             The intent of SDI is to build on and enhance safety efforts related to data, analysis, and policy making.  With the Waze data 
-             SDI is integration transportation data to develop rapid crash indicators.
-          </p>
-        </div>
-        <div class="tablet:grid-col-6 tablet:grid-offset-5 margin-top-3">
-          <img class="margin-x-auto display-block" src="images/map.png" alt="Application screenshot">
-        </div>
-      </div> <!-- grid-row -->
-      <div class="grid-row grid-gap margin-bottom-1">
-        <div class="tablet:grid-col-9 tablet:grid-offset-2">
-          <hr class="border-primary-light"></hr>
-          <h3>Connected Vehicle Pilot Deployment Program</h3>
-        </div>
-        <div class="tablet:grid-col-3 tablet:grid-offset-2">
-          <img class="margin-x-auto margin-bottom-1 display-block" src="images/connected_vehicle_logo.png" alt="Waze logo">
-        </div>
-        <div class="tablet:grid-col-6">
-          <p class="currentDataInfoBox line-height-sans-6 text-normal">
-            USDOT awarded cooperative agreements (collectively worth more than $45 million) to three pilot sites 
-            in <a target="_blank" href="https://www.its.dot.gov/pilots/pilots_nycdot.htm">New York City</a>,
-            <a target="_blank" href="https://www.its.dot.gov/pilots/pilots_thea.htm">Tampa</a>,
-             and <a target="_blank" href="https://www.its.dot.gov/pilots/pilots_wydot.htm">Wyoming</a> to 
-            implement a suite of connected vehicle applications and technologies tailored to meet the unique
-            transportation needs of each site’s region. The SDC is a repository for select data generated by the deployments to 
-            support independent evaluations of the connected vehicle pilots. Test data from the Tampa and Wyoming pilots are 
-            available in the SDC – check back soon for data from all three sites.
-          </p>
-        </div>
-      </div> <!-- grid-row -->
-      <div class="grid-row grid-gap margin-bottom-1">
-          <div class="tablet:grid-col-9 tablet:grid-offset-2">
-            <hr class="border-primary-light"></hr>
-            <h3>American Transportation Research Institute Freight Mobility Initiative Program</h3>
-          </div>
-          <div class="tablet:grid-col-3 tablet:grid-offset-2">
-            <img class="margin-x-auto margin-bottom-1 display-block" src="images/atri_logo.jpg" alt="Waze logo">
-          </div>
-          <div class="tablet:grid-col-6">
-            <p class="currentDataInfoBox line-height-sans-6 text-normal">
-                The <a target="_blank" href="https://www.bts.gov/">USDOT Bureau of Transportation Statistics (BTS)</a> is continually interested in understanding 
-                the extent and use of the Nation’s transportation network, the performance and impacts of the U.S. 
-                transportation system, and the flow of people, goods, and vehicles over the transportation network 
-                as this data is critical to supporting federal, state, and local policymaking and funding allocations. 
-                Within the SDC, the American Transportation Research Institute’s (ATRI) Freight Mobility Initiative (FMI) 
-                project brings together data from ATRI that leverages GPS on trucks with spatial statisticians from BTS to
-                develop new approaches to analyze and visualize freight performance and network use.
-            </p>
-          </div>
-        </div> <!-- grid-row -->
     </div>
-  </section>
+    <div class="grid-row margin-bottom-5 grid-gap">
+      <div class="usa-layout-docs__main desktop:grid-col-2 desktop:grid-offset-3">
+        <img class="margin-x-auto margin-bottom-1 display-block" src="images/waze_logo_1.png" alt="Waze logo">
+        <p class="text-normal">Waze — Connected Citizens Program</p>
+      </div>
+      <div class="usa-layout-docs__main desktop:grid-col-2">
+        <img class="margin-x-auto margin-bottom-1 display-block" src="images/connected_vehicle_logo.png" alt="Waze logo">
+        <p class="text-normal">Connected Vehicle Pilot Deployment Program</p>
+      </div>
+      <div class="usa-layout-docs__main desktop:grid-col-2">
+        <img class="margin-x-auto margin-bottom-1 display-block" src="images/atri_logo.jpg" alt="Waze logo">
+        <p class="text-normal">American Transportation Research Institute Freight Mobility Initiative Program</p>
+      </div>
+    </div> <!-- grid-row -->
+    <div class="grid-row grid-gap margin-bottom-1">
+      <div class="usa-layout-docs__main desktop:grid-col-9 desktop:grid-offset-3">
+        <hr class="border-primary-light"></hr>
+        <h3>Waze — Connected Citizens Program</h3>
+      </div>
+      <div class="usa-layout-docs__main desktop:grid-col-3 desktop:grid-offset-3">
+        <img class="margin-x-auto margin-bottom-1 display-block" src="images/waze_logo_2.png" alt="Waze logo">
+      </div>
+      <div class="usa-layout-docs__main desktop:grid-col-6">
+        <p class="currentDataInfoBox line-height-sans-6 text-normal">
+          The U.S. Department of Transportation’s (USDOT) 
+          <a starget="_blank" href="https://www.transportation.gov/content/safety-data-initiative">Safety Data Initiative (SDI)</a>
+            is a cross-cutting, collaborative effort within DOT, led by the Office of the Secretary of Transportation (OST). 
+            The intent of SDI is to build on and enhance safety efforts related to data, analysis, and policy making.  With the Waze data 
+            SDI is integration transportation data to develop rapid crash indicators.
+        </p>
+      </div>
+      <div class="usa-layout-docs__main desktop:grid-col-6 desktop:grid-offset-6 margin-top-3">
+        <img class="margin-x-auto display-block" src="images/map.png" alt="Application screenshot">
+      </div>
+    </div> <!-- grid-row -->
+    <div class="grid-row grid-gap margin-bottom-1">
+      <div class="usa-layout-docs__main desktop:grid-col-9 desktop:grid-offset-3">
+        <hr class="border-primary-light"></hr>
+        <h3>Connected Vehicle Pilot Deployment Program</h3>
+      </div>
+      <div class="usa-layout-docs__main desktop:grid-col-3 desktop:grid-offset-3">
+        <img class="margin-x-auto margin-bottom-1 display-block" src="images/connected_vehicle_logo.png" alt="Waze logo">
+      </div>
+      <div class="usa-layout-docs__main desktop:grid-col-6">
+        <p class="currentDataInfoBox line-height-sans-6 text-normal">
+          USDOT awarded cooperative agreements (collectively worth more than $45 million) to three pilot sites 
+          in <a target="_blank" href="https://www.its.dot.gov/pilots/pilots_nycdot.htm">New York City</a>,
+          <a target="_blank" href="https://www.its.dot.gov/pilots/pilots_thea.htm">Tampa</a>,
+            and <a target="_blank" href="https://www.its.dot.gov/pilots/pilots_wydot.htm">Wyoming</a> to 
+          implement a suite of connected vehicle applications and technologies tailored to meet the unique
+          transportation needs of each site’s region. The SDC is a repository for select data generated by the deployments to 
+          support independent evaluations of the connected vehicle pilots. Test data from the Tampa and Wyoming pilots are 
+          available in the SDC – check back soon for data from all three sites.
+        </p>
+      </div>
+    </div> <!-- grid-row -->
+    <div class="grid-row grid-gap margin-bottom-1">
+        <div class="usa-layout-docs__main desktop:grid-col-9 desktop:grid-offset-3">
+          <hr class="border-primary-light"></hr>
+          <h3>American Transportation Research Institute Freight Mobility Initiative Program</h3>
+        </div>
+        <div class="usa-layout-docs__main desktop:grid-col-3 desktop:grid-offset-3">
+          <img class="margin-x-auto margin-bottom-1 display-block" src="images/atri_logo.jpg" alt="Waze logo">
+        </div>
+        <div class="usa-layout-docs__main desktop:grid-col-6">
+          <p class="currentDataInfoBox line-height-sans-6 text-normal">
+              The <a target="_blank" href="https://www.bts.gov/">USDOT Bureau of Transportation Statistics (BTS)</a> is continually interested in understanding 
+              the extent and use of the Nation’s transportation network, the performance and impacts of the U.S. 
+              transportation system, and the flow of people, goods, and vehicles over the transportation network 
+              as this data is critical to supporting federal, state, and local policymaking and funding allocations. 
+              Within the SDC, the American Transportation Research Institute’s (ATRI) Freight Mobility Initiative (FMI) 
+              project brings together data from ATRI that leverages GPS on trucks with spatial statisticians from BTS to
+              develop new approaches to analyze and visualize freight performance and network use.
+          </p>
+        </div>
+      </div> <!-- grid-row -->
+  </div>
 </main>
 <footer role="contentinfo">
   <div id="footer"></div>
