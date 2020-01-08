@@ -88,18 +88,6 @@
   height: 320px;
 }
 
-.gettingStartedInfoCard {
-  height: 280px;
-}
-
-.gettingStartedInfoCard a {
-  text-decoration: none;
-}
-
-.gettingStartedInfoCard ul {
-  color: black;
-}
-
 .gettingStartedIconContainer {
   width: 200px;
   height: 200px;
