@@ -182,3 +182,7 @@
 #last_hr {
   border-top: 1px solid lightgrey;
 }
+
+#footer a {
+  text-decoration: none;
+}
