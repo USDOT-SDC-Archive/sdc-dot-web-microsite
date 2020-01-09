@@ -326,7 +326,35 @@ a.link-box:hover {
   a.link-box {
     height: auto; }
     a.link-box h4 {
-      font-size: 1.3rem; } }
+      font-size: 1.3rem; 
+    } 
+}
+
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  height: 100%; }
+  .card .sdc-card {
+    padding: 1.25rem;
+    margin-bottom: 30px;
+    height: 100%;
+    border-radius: .25rem;
+    border: 3px solid #f2f2f2; }
+    .card .sdc-card h4 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 0.5rem; }
+    .card .sdc-card ul.list-bullets {
+      margin: 0;
+      font-weight: 300; }
 
 .accessLink {
   text-transform: uppercase;
