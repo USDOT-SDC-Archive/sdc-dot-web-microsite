@@ -31,35 +31,21 @@
 .nextStepsBox {
   background-color: #ECF4FA;
   border-radius: 25px;
+  height:100%;
 }
 
 .nextStepsBox a {
   text-decoration: none;
 }
 
-.nextStepsIconContainer {
+.smallIconContainer {
   width: 100px;
   height: 100px;
 }
 
-.aboutImgContainer {
-  height: 100px;
-  width: 100px;
-}
-
-.analysisNextStepsBox{
-  background-color: #ECF4FA;
-  border-radius: 25px;
-  height:100%;
-}
-
-.analysisImgContainer {
+.mediumIconContainer {
   height: 150px;
   width: 150px;
-}
-
-.analysisInfoCard {
-  height: 600px;
 }
 
 .blueBox {
@@ -80,14 +66,9 @@
   height: 250px;
 }
 
-.homeImgContainer {
+.lifecycleImgContainer {
   height: 100px;
   width: 100px;
-}
-
-.lifecycleImgContainer {
-  height: 120px;
-  width: 120px;
   float: left
 }
 
