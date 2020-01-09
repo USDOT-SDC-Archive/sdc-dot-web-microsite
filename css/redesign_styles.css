@@ -50,8 +50,7 @@
 .analysisNextStepsBox{
   background-color: #ECF4FA;
   border-radius: 25px;
-  width: 270px;
-  height: 270px
+  height:100%;
 }
 
 .analysisImgContainer {
