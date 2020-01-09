@@ -52,12 +52,14 @@ The Secure Data Commons (SDC) is a cloud-based analytics platform that enables a
 
 <strong>January 10, 2019. SDC sdc-dot-web-microsite Release 2.4</strong><br/>
 What's New in Release 2.5:
+
 Updated the Data Analyst user guide with the following:
 - Added new instructions on how to set up GitLab repositories with SDC for code sharing in Chapter 7 Setting Up SDC with GitLab Repositories
 - Added new new FMI queries section to Chapter 4 Sample Queries for SDC Datasets
 - Added new commands to the “AWS S3 CLI Commands” section in Chapter 8 Technical Documentation and Contact Information
 - Added instructions in Chapter 6 Exporting Datasets from the SDC about printing documents
 - Added example copy command in Chapter 2 notes
+
 Updated the Data Provider user guide with the following:
 - Updated links throughout for the Data Analyst user guide
 - Updated the Chapter 4 title to "Data Ingestion" 
