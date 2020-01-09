@@ -153,21 +153,3 @@
 #footer a {
   text-decoration: none;
 }
-
-.accessLink {
-  text-transform: uppercase;
-  font-size: .65rem;
-  text-align: center;
-  line-height: .9;
-  color: #565c65;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.accessLink:hover, .accessLink:focus {
-  text-decoration: underline;
-}
-
-.loginButton {
-  margin: 1rem 1rem 0.2rem;
-}
