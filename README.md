@@ -55,7 +55,7 @@ What's New in Release 2.5:
 
 Updated the Data Analyst user guide with the following:
 - Added new instructions on how to set up GitLab repositories with SDC for code sharing in Chapter 7 Setting Up SDC with GitLab Repositories
-- Added new new FMI queries section to Chapter 4 Sample Queries for SDC Datasets
+- Added new FMI queries section to Chapter 4 Sample Queries for SDC Datasets
 - Added new commands to the “AWS S3 CLI Commands” section in Chapter 8 Technical Documentation and Contact Information
 - Added instructions in Chapter 6 Exporting Datasets from the SDC about printing documents
 - Added example copy command in Chapter 2 notes
