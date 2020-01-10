@@ -101,6 +101,9 @@ a.link-box:focus,a.link-box:hover{
   margin-top:0;
   margin-bottom:0.5rem
 }
+.card .sdc-card h3{
+  margin-top:0;
+}
 .card .sdc-card ul.list-bullets{
   margin:0;
   font-weight:300
@@ -366,7 +369,7 @@ a.link-box:hover {
   text-decoration: none;
 }
 
-.accessLink:hover, .accessLink:focus {
+a.accessLink:hover, a.accessLink:focus {
   text-decoration: underline;
 }
 
