@@ -17,4 +17,3 @@ addons:
         organization: "usdot-jpo-sdc"
 script: 
     - coverage erase
-    - sonar-scanner -X -D sonar.login=$SONAR_TOKEN
