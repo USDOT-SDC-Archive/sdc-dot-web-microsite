@@ -3,14 +3,12 @@
 }
 
 #project-table td {
-  border: 1px solid #73b3e7;
   text-align: left;
   padding: 8px;
 }
 
 #project-table th {
   background-color: #E5E5E5;
-  border: 1px solid #73b3e7;
   text-align: center;
   font-size: large;
 } 
@@ -29,8 +27,8 @@
 }
 
 .nextStepsBox {
-  background-color: #ECF4FA;
-  border-radius: 25px;
+  background-color: #f2f2f2;
+  border-radius: 15px;
   height:100%;
 }
 
@@ -48,8 +46,9 @@
   width: 150px;
 }
 
-.blueBox {
-  background-color: #A2EFF9;
+.largeIconContainer {
+  height: 200px;
+  width: 200px;
 }
 
 .currentDataInfoBox a {
@@ -62,8 +61,8 @@
   float: left
 }
 
-.lifecycleBlueBorder {
-  border: solid #9DDFEB 8px;
+.lifecycleOrangeBorder {
+  border: solid #ffbe2e 8px;
 }
 
 .lifecycleGreenBorder {
@@ -89,22 +88,6 @@
   color: grey;
   display: table-cell;
   vertical-align: middle;
-}
-
-.headerLargeText {
-  font-size: 50px;
-}
-
-.headerMediumText {
-  font-size: 30px;
-}
-
-.smallCard {
-  width: 280px;
-}
-
-.mediumCard {
-  width: 300px;
 }
 
 #last_hr {
