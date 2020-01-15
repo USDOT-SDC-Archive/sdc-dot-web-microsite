@@ -33,24 +33,3 @@
         }
     }    
 }
-#capabilities-icon,
-#datasets-icon,
-#gainaccess-icon {
-    width: 80px;
-    height:80px;
-    margin: 0 auto 5px;
-    background-repeat: no-repeat;
-    background-size: 80px 80px;
-}
-#capabilities-icon {background-image: url('../images/sdc-homepage-icons-01.svg');}
-#datasets-icon {background-image: url('../images/sdc-homepage-icons-02.svg');}
-#gainaccess-icon {background-image: url('../images/sdc-homepage-icons-03.svg');}
-@media (max-width: 63.99em) {
-    #capabilities-icon,
-    #datasets-icon,
-    #gainaccess-icon {
-        width: 60px;
-        height:60px;
-        background-size: 60px 60px;
-    }
-}
