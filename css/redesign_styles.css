@@ -89,3 +89,12 @@
 .dataList li {
   margin-bottom: 0.5rem;
 }
+
+.usa-nav__secondary-item a:hover, a:focus {
+  color: darkblue;
+  text-decoration: underline;
+}
+
+.greenTableBox {
+  background-color: #eaf4dd !important;
+}
