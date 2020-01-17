@@ -2,6 +2,7 @@
   $(document).ready(function() {
     var current_page = $('#banner').data('current-page');
     $('#' + current_page).addClass('usa-current');
+    $('#' + current_page).find('a').attr('aria-current', 'page');
     if (current_page == 'home_menu') {
       $('#last_hr').hide();
     }
