@@ -20,7 +20,7 @@
 
 <body>
 <div id="banner" data-current-page="getting_started_menu"></div>
-<main class="usa-layout-docs usa-section" id="main-content">
+<main class="usa-layout-docs usa-section usa-prose" id="main-content">
   <div class="grid-container">
     <div class="grid-row grid-gap">
       <aside class="usa-layout-docs__sidenav desktop:grid-col-3">
@@ -50,15 +50,15 @@
           and ad-hoc (occasional), the SDC offers authorized and controlled access to individual datasets &#45; as well as the metadata 
           &#45; associated with those datasets.
         </p>
-        <h3>
+        <h2>
           Considering the SDC for your project, data, or analysis needs?<br> Here&apos;s what you need to know. 
-        </h3>
+        </h2>
         <h3>See how the SDC can help you as a</h3>
         <div class="grid-row">
           <div class="grid-col-12 tablet:grid-col-4">
             <a class="link-box" href="starting_a_project.html">
-              <h3>Project Owner</h3>
-              <ul class="margin-left-neg-3 text-base-darkest">
+              <h4>Project Owner</h4>
+              <ul class="dataList margin-left-neg-3 text-base-darkest">
                 <li>Conceptualize your project within the SDC and get a project cost estimate</li>
                 <li>Control the type of derived data users can export or copy from the system</li>
                 <li>Understand the overall process and schedule for using SDC</li>
@@ -67,8 +67,8 @@
           </div>
           <div class="grid-col-12 tablet:grid-col-4">
             <a class="link-box" href="getting_data_to_sdc.html">
-              <h3 class="margin-top-1">Data Provider</h3>
-              <ul class="margin-left-neg-3 text-base-darkest ">
+              <h4 class="margin-top-1">Data Provider</h4>
+              <ul class="dataList margin-left-neg-3 text-base-darkest ">
                 <li>Define the terms of access and grant or deny access to specific SDC users or groups</li>
                 <li>Learn how the SDC can ensure the right data is made available for your project</li>
                 <li>Upload data through your project</li>
@@ -78,8 +78,8 @@
           </div>
           <div class="grid-col-12 tablet:grid-col-4">
             <a class="link-box" href="conducting_analysis.html">
-              <h3 class="margin-top-1">Data Analyst</h3>
-              <ul class="margin-left-neg-3 text-base-darkest ">
+              <h4 class="margin-top-1">Data Analyst</h4>
+              <ul class="dataList margin-left-neg-3 text-base-darkest ">
                 <li>Learn what types of data are available for your analysis</li>
                 <li>Understand the tools and query languages available to you</li>
                 <li>Develop common data formats and fix issues during testing</li>
@@ -90,48 +90,50 @@
       </div>
       <div class="usa-layout-docs__main desktop:grid-col-9 desktop:grid-offset-3">
         <h3>Technical Requirements</h3>
-      </div>
-      <div class="usa-layout-docs__main desktop:grid-col-2 desktop:grid-offset-3">
-        <div class="smallIconContainer margin-x-auto">
-          <img src="images/svgs/SDC_Icon_Technical_Requirements.svg" alt="Technical document icon">
-        </div>
-      </div>
-      <div class="usa-layout-docs__main desktop:grid-col-7">
-        <p>
-          SDC users are expected to be skilled in programming (R, Python, SQL expertise is required) and some to have
-          familiarity with cloud services. To access and utilize datasets within the SDC platform, SDC users 
-          need to have experience with services and tools such as Amazon web services (i.e., Amazon S3), 
-          GitLab, SQL, RStudio, and Python.
-        </p>
-      </div>
-      <div class="usa-layout-docs__main desktop:grid-col-9 desktop:grid-offset-3">
+        <div class="grid-row">
+          <div class="grid-col-12 tablet:grid-col-2">
+            <div class="smallIconContainer margin-x-auto">
+              <img src="images/svgs/SDC_Icon_Technical_Requirements.svg" alt="Technical document icon">
+            </div>
+          </div>
+          <div class="grid-col-12 tablet:grid-col-10">
+            <p>
+              SDC users are expected to be skilled in programming (R, Python, SQL expertise is required) and some to have
+              familiarity with cloud services. To access and utilize datasets within the SDC platform, SDC users 
+              need to have experience with services and tools such as Amazon web services (i.e., Amazon S3), 
+              GitLab, SQL, RStudio, and Python.
+            </p>
+          </div>
+        </div><!--grid-row-->
         <h3>Security</h3>
-      </div>
-      <div class="usa-layout-docs__main desktop:grid-col-2 desktop:grid-offset-3">
-        <div class="smallIconContainer margin-x-auto">
-          <img src="images/svgs/SDC_Icon_Security.svg" alt="Security badge icon">
+        <div class="grid-row">
+          <div class="grid-col-12 tablet:grid-col-2">
+            <div class="smallIconContainer margin-x-auto">
+              <img src="images/svgs/SDC_Icon_Security.svg" alt="Security badge icon">
+            </div>
+          </div>
+          <div class="grid-col-12 tablet:grid-col-10">
+            <p>
+              Each participating data provider in the SDC defines the levels of access to SDC users. 
+              Based on the agreement with the data provider, the SDC team granularly grants access to approved users of the data. 
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="usa-layout-docs__main desktop:grid-col-7">
-        <p>
-          Each participating data provider in the SDC defines the levels of access to SDC users. 
-          Based on the agreement with the data provider, the SDC team granularly grants access to approved users of the data. 
-        </p>
-      </div>
-      <div class="usa-layout-docs__main desktop:grid-col-9 desktop:grid-offset-3">
         <h3>Access to SDC Portal</h3>
-      </div>
-      <div class="usa-layout-docs__main desktop:grid-col-2 desktop:grid-offset-3">
-        <div class="smallIconContainer margin-x-auto">
-          <img src="images/svgs/SDC_Icon_Access.svg" alt="Security badge icon">
+        <div class="grid-row">
+          <div class="grid-col-12 tablet:grid-col-2">
+            <div class="smallIconContainer margin-x-auto">
+              <img src="images/svgs/SDC_Icon_Access.svg" alt="Security badge icon">
+            </div>
+          </div>
+          <div class="grid-col-12 tablet:grid-col-10">
+            <p>
+              Currently the SDC is available only to USDOT-approved projects. If you are a part of a current SDC project and would like access,
+              or if you would like to propose your project as a new applicant for the SDC,
+              please email <a href="mailto:'support@securedatacommons.com'" class="text-no-underline">support@securedatacommons.com</a>.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="usa-layout-docs__main desktop:grid-col-7">
-        <p>
-          Currently the SDC is available only to USDOT-approved projects. If you are a part of a current SDC project and would like access,
-          or if you would like to propose your project as a new applicant for the SDC,
-          please email <a href="mailto:'support@securedatacommons.com'" class="text-no-underline">support@securedatacommons.com</a>.
-        </p>
       </div>
     </div>
   </div>

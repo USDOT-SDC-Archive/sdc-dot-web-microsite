@@ -1,34 +1,6 @@
-#project-table table {
-  width: 100%;
-}
-
-#project-table td {
-  text-align: left;
-  padding: 8px;
-}
-
-#project-table th {
-  background-color: #E5E5E5;
-  text-align: center;
-  font-size: large;
-} 
-
-#project-table i {
-  font-size:20px;
-}
-
-.firstCol {
-  font-weight: bold;
-  background-color: #E5E5E5;
-}
-
-.greenTableBox {
-  background-color: rgb(190, 243, 190);
-}
-
 .nextStepsBox {
   background-color: #f2f2f2;
-  border-radius: 15px;
+  border-radius: 6px;
   height:100%;
 }
 
@@ -104,4 +76,8 @@
 
 .trainingVideo {
   width: 500px;
+}
+
+.dataList li {
+  margin-bottom: 0.5rem;
 }
