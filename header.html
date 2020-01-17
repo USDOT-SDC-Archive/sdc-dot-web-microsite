@@ -7,4 +7,11 @@
 <meta name="author" content="U.S. Department of Transportation">
 <!-- Disable tap highlight on IE -->
 <meta name="msapplication-tap-highlight" content="no">
-<title>Secure Data Commons</title>
+<script>
+  $(document).ready(function() {
+    var page_title = $('#header').data('page-title');
+    title_text = page_title !== undefined ? `Secure Data Commons - ${page_title}` : 'Secure Data Commons'
+    $('#title').text(title_text);
+  });
+</script>
+<title id="title"></title>
