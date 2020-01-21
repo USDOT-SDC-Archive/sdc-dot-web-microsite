@@ -8,6 +8,10 @@
   text-decoration: none;
 }
 
+.nextStepsBox a:hover, a:focus {
+  text-decoration: underline;
+}
+
 .smallIconContainer {
   width: 100px;
   height: 100px;
@@ -25,6 +29,10 @@
 
 .currentDataInfoBox a {
   text-decoration: none;
+}
+
+.currentDataInfoBox a:focus, a:hover {
+  text-decoration: underline;
 }
 
 .lifecycleImgContainer {
@@ -80,4 +88,13 @@
 
 .dataList li {
   margin-bottom: 0.5rem;
+}
+
+.greenTableBox {
+  background-color: #eaf4dd !important;
+}
+
+.externalDotLinks li:hover, li:focus {
+  color: #565c65 !important;
+  text-decoration: underline;
 }

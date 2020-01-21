@@ -2,6 +2,7 @@
   $(document).ready(function() {
     var current_page = $('#banner').data('current-page');
     $('#' + current_page).addClass('usa-current');
+    $('#' + current_page).find('a').attr('aria-current', 'page');
     if (current_page == 'home_menu') {
       $('#last_hr').hide();
     }
@@ -43,38 +44,36 @@
 <header id="header" class="usa-header usa-header--basic" role="banner">
   <div class="usa-banner__header" id="dot-header">
     <div class="usa-banner__inner">
-      <a href="https://transportation.gov"><img id="dot_logo" src="images/dot_logo.png" alt="Department of Transportation logo"></a>
+      <a href="https://transportation.gov"><img id="dot_logo" src="images/dot_logo.png" alt="US Department of Transportation"></a>
     </div>
     </div>
   <div class="usa-nav-container">
     <div class="usa-navbar">
-      <div class="usa-logo" id="basic-logo"> <em class="usa-logo__text"><a href="index.html" title="Home" aria-label="Home">Secure Data Commons</a></em> </div>
+      <div class="usa-logo" id="basic-logo"> <em class="usa-logo__text"><a href="index.html" title="Home" aria-label="Secure Data Commons Home">Secure Data Commons</a></em> </div>
       <button class="usa-menu-btn">Menu</button>
     </div>
     <nav role="navigation" class="usa-nav">
       <button class="usa-nav__close"><img src="assets/img/close.svg" alt="close"></button>
       <ul class="usa-nav__primary usa-accordion">
-        <li id="home_menu" class="usa-nav__primary-item"> <a class="usa-nav__link" href="index.html"><span class="text-primary-dark">Home</span></a> </li>
-        <li id="about_menu" class="usa-nav__primary-item"> <a class="usa-nav__link" href="about.html"><span class="text-primary-dark">About SDC</span></a> </li>
-        <li id="getting_started_menu" class="usa-nav__primary-item"> <a class="usa-nav__link" href="getting_started.html"><span class="text-primary-dark">Getting Started</span></a> </li>
-        <li id="support_menu" class="usa-nav__primary-item"> <a class="usa-nav__link" href="support.html"><span class="text-primary-dark">Support</span></a> </li>
-        <li class="usa-nav__primary-item"> <a class="usa-nav__link" href="https://github.com/usdot-jpo-sdc" target="_blank"><span class="text-primary-dark">GitHub Project</span> <img src="assets/img/external-link.svg" alt="" class="usa-header__primary-link-icon-social"></a> </li>
+        <li class="usa-nav__primary-item"> <a id="home_menu" class="usa-nav__link" href="index.html"><span>Home</span></a> </li>
+        <li class="usa-nav__primary-item"> <a id="about_menu" class="usa-nav__link" href="about.html"><span>About SDC</span></a> </li>
+        <li class="usa-nav__primary-item"> <a id="getting_started_menu" class="usa-nav__link" href="what_you_need_to_know.html"><span>Getting Started</span></a> </li>
+        <li class="usa-nav__primary-item"> <a id="support_menu" class="usa-nav__link" href="support.html"><span>Support</span></a> </li>
+        <li class="usa-nav__primary-item"> <a class="usa-nav__link" href="https://github.com/usdot-jpo-sdc" target="_blank"><span>GitHub Project</span> <img src="assets/img/external-link.svg" alt="external link" class="usa-header__primary-link-icon-social"></a> </li>
         <li class="usa-nav__primary-item">
           <div class="display-flex flex-column">
-            <a class="usa-nav__primary-item usa-button loginButton" href="https://portal.securedatacommons.com/register">Login</a>
-            <a class="usa-nav__primary-item accessLink" href="files/SDCAccessRequestForm.pdf" target="_blank">Request Access</a>
+            <a class="login_button usa-button" href="https://portal.securedatacommons.com/register">Login</a>
+            <a class="accessLink" href="files/SDCAccessRequestForm.pdf" target="_blank">Request Access</a>
           </div>
         </li>
       </ul>
       <div class="usa-nav__secondary">
-        <div class="dh-header__secondary-links">
-          <ul class="usa-nav__secondary-links">
-            <li class="usa-nav__secondary-item"><a href="https://www.its.dot.gov/" target="_blank">ABOUT ITS JPO</a></li>
-            <li class="usa-nav__secondary-item"><a href="https://www.transportation.gov/mission/about-us" target="_blank">ABOUT U.S. DOT</a></li>
-            <li class="usa-nav__secondary-item"><a href="https://www.transportation.gov/briefingroom" target="_blank">U.S. DOT BRIEFING ROOM</a></li>
-            <li class="usa-nav__secondary-item"><a href="https://www.transportation.gov/our-activities" target="_blank">U.S. DOT ACTIVITIES</a></li>
-          </ul>
-        </div>
+        <ul class="usa-nav__secondary-links">
+          <li class="usa-nav__secondary-item"><a href="https://www.its.dot.gov/" target="_blank">ABOUT ITS JPO</a></li>
+          <li class="usa-nav__secondary-item"><a href="https://www.transportation.gov/mission/about-us" target="_blank">ABOUT U.S. DOT</a></li>
+          <li class="usa-nav__secondary-item"><a href="https://www.transportation.gov/briefingroom" target="_blank">U.S. DOT BRIEFING ROOM</a></li>
+          <li class="usa-nav__secondary-item"><a href="https://www.transportation.gov/our-activities" target="_blank">U.S. DOT ACTIVITIES</a></li>
+        </ul>
       </div>
     </nav>
   </div>
