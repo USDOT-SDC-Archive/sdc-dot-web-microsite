@@ -38,7 +38,6 @@
 .lifecycleImgContainer {
   height: 100px;
   width: 100px;
-  float: left
 }
 
 .lifecycleOrangeBorder {
@@ -61,6 +60,13 @@
   box-shadow: 0 0 5px 2px lightgray;
   text-align: center;
   display: table;
+  z-index: 1;
+}
+
+@media (max-width: 63.99em) {
+  .lifecycleHeader {
+    text-align: center;
+  }
 }
 
 .lifecycleDownArrowIcon {
