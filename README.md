@@ -83,7 +83,7 @@ What's New in Release 2.1:
 - Added a new Starter Kit page with links to the Data Analyst User Guide, Data Provider User Guide, and SDC Cost Estimator.
 - Revised language throughout the microsite to reflect operational status (removed “proof of concept”). Added “USDOT” in front of all instances of “Secure Data Commons” and replaced “portal” with “platform.”
 
-<strong>February 2019. SDC sdc-dot-web-microsite Release 2.2</strong><br/>
+<strong>January 28, 2019. SDC sdc-dot-web-microsite Release 2.2</strong><br/>
 What's New in Release 2.2:
 - Completely redesigned the microsite with new look and feel.
 - Updated main content on the microsite.
@@ -171,7 +171,7 @@ December 10, 2019. SDC sdc-dot-web-microsite Release 2.4<br/>
 November 1, 2019. SDC sdc-dot-web-microsite Release 2.3<br/>
 October 18, 2019. SDC sdc-dot-web-microsite Release 2.2<br/>
 August 8, 2019. SDC sdc-dot-web-microsite Release 2.1<br/>
-February 2019. SDC sdc-dot-web-microsite Release 2.1<br/>
+January 28, 2019. SDC sdc-dot-web-microsite Release 2.1<br/>
 
 <!---                             -->
 <!---     Contact Information     -->
