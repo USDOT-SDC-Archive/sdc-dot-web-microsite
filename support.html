@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- USWDS Styles -->
+  <link rel="stylesheet" href="assets/css/uswds.min.css">
+  <!-- SDC Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Redesign Styles -->
+  <link rel="stylesheet" href="css/redesign_styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#footer').load('footer.html');
+      $('#banner').load('banner.html');
+      $('#header').load('header.html');
+    });
+  </script>
+  <div id="header" data-page-title="Support"></div>
+</head>
+
+<body>
+<div id="banner" data-current-page="support_menu"></div>
+<main class="usa-layout-docs usa-section usa-prose" id="main-content">
+  <div class="grid-container">
+    <div class="grid-row grid-gap">
+      <aside class="usa-layout-docs__sidenav desktop:grid-col-3">
+        <nav aria-label="Secondary navigation">
+          <ul class="usa-sidenav">
+            <li class="usa-sidenav__item">
+              <a href="" aria-current="page" class="usa-current">Training Materials</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="usa-layout-docs__main desktop:grid-col-9">
+        <h1 class="margin-top-0">Training Materials</h1>
+        <h3>Demo Videos</h3>
+        <video class="trainingVideo" controls>
+          <source src="videos/sdc_demo_intro.mp4" type="video/mp4">
+          Encountered an unknown error loading the video.
+          <track src="files/SDC_Demo_Captions" kind="subtitles" srclang="en" label="English">
+        </video>
+        <div>
+          <a target="_blank" class="text-no-underline" href="files/SDC_DEMO.pdf">SDC Demo Presentation (PDF 1.6 MB)</a>
+        </div>
+        <h3>Data Analyst Training Materials</h3>
+        <a target="_blank" class="text-no-underline" href="files/Secure_Data_Commons_Data_Analyst_User_Guide.pdf">User Guide for Data Analysts (PDF 4.6 MB)</a>
+        <h3>Data Provider Training Materials</h3>
+        <a target="_blank" class="text-no-underline" href="files/Secure_Data_Commons_Data_Provider_User_Guide.pdf">User Guide for Data Providers (PDF 389 KB)</a>
+        <h4>For more videos and more information about the SDC please reach out to the <a href="mailto:support@securedatacommons.com" class="text-no-underline">SDC Support Desk</a>.<h4>
+      </div>
+    </div>
+  </div>
+</main>
+<footer role="contentinfo">
+  <div id="footer"></div>
+</footer>
+<script src="assets/js/uswds.min.js"></script>
+</body>
+</html>

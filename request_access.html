@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- SEO -->
+<meta name="description" content="The Secure Data Commons is an online data warehousing and analysis platform for transportation researchers. On this portal, researchers can take advantage of pre-established programming environments to access and analyze a growing set of transportation-related data sets.">
+<meta name="keywords" content="Secure Data Commons, USDOT, DOT, FHWA, Transportation Research, Datasets">
+<meta name="author" content="U.S. Department of Transportation">
+<!-- Disable tap highlight on IE -->
+<meta name="msapplication-tap-highlight" content="no">
+<title>Secure Data Commons</title>
+<!-- USWDS Styles -->
+<link rel="stylesheet" href="assets/css/uswds.min.css">
+<!-- SDC Styles -->
+<link rel="stylesheet" href="css/styles.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('#footer').load('footer.html');
+    $('#banner').load('banner.html');
+  });
+</script>
+</head>
+
+<body>
+<div id="banner" data-current-page="home_menu"></div>
+<main class="usa-prose">
+  <section>
+    <div class="grid-container margin-5">
+      <div class="grid-row">
+        <div class="grid-col-6 margin-x-auto">
+          <h1>Request Access to SDC</h1>
+          <p>
+            Currently, the SDC is only available to USDOT-approved projects. If you are a part of a current SDC project and would like access,
+            or if you would like to propose your project as a new applicant for the SDC, please complete the form below to request access to SDC.
+          </p>
+          <b>All fields are required unless marked as optional</b>
+    
+          <label class="usa-label" for="name-input">Name</label>
+          <input class="usa-input" id="name-input" name="name-input" type="text">
+    
+          <label class="usa-label" for="address-input">Address</label>
+          <input class="usa-input" id="address-input" name="address-input" type="text">
+    
+          <label class="usa-label" for="org-input">Organization/Company</label>
+          <input class="usa-input" id="org-input" name="org-input" type="text">
+    
+          <label class="usa-label" for="rationale-textarea">Email</label>
+          <input class="usa-input" id="rationale-textarea" name="rationale-textarea" type="text">
+    
+          <label class="usa-label" for="rationale-textarea">Phone</label>
+          <input class="usa-input" id="rationale-textarea" name="rationale-textarea" type="text">
+    
+          <label class="usa-label" for="rationale-textarea">Rationale for Requesting Access (Please summarize the work you plan to do using the SDC):</label>
+          <textarea class="usa-textarea" id="rationale-textarea" name="rationale-textarea"></textarea>
+
+          <table class="usa-table">
+            <label class="usa-label">Please select the workstation of your choice, for which you would need access.</label>
+            <thead>
+              <tr>
+                <th scope="col">Select for Access</th>
+                <th scope="col">Workstation Name</th>
+                <th scope="col">Operating System</th>
+                <th scope="col">Programming Tools</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <div class="usa-checkbox">
+                    <input class="usa-checkbox__input" id="option1-select" type="checkbox" name="option1-select" value="programming1">
+                    <label class="usa-checkbox__label" for="option1-select"></label>
+                  </div>
+                </th>
+                <td>Programming Environment #1</td>
+                <td>Windows</td>
+                <td>Microsoft-R, Rstudio, Python, Microsoft Power BI, SQL Server Management Studio, SQL Workbench, Open Office, Firefox</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <div class="usa-checkbox">
+                    <input class="usa-checkbox__input" id="option2-select" type="checkbox" name="option2-select" value="programming2">
+                    <label class="usa-checkbox__label" for="option2-select"></label>
+                  </div>
+                </th>
+                <td>TProgramming Environment #2</td>
+                <td>Linux</td>
+                <td>Microsoft-R, Rstudio, R Studio Server, Python, Firefox, Jupyter Notebook</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <label class="usa-label" for="additional-software">Please list any additional software you require.<br> Note: For all licensed softwares, you are expected to bring your own license.</label>
+          <textarea class="usa-textarea" id="additional-software" name="additional-software"></textarea>
+
+          <label class="usa-label" for="sdc-terms-and-conditions">SDC Data Use Terms and Conditions</label>
+          <textarea class="usa-textarea" id="sdc-terms-and-conditions" name="sdc-terms-and-conditions">
+            The use of the SDC system is subject to the following terms:
+            ● Access to the SDC system does not imply access to all the available datasets included in the SDC Platform. Users need to request access to specific datasets available in the platform.
+            ● Data Use, distribution terms for specific data sets are governed by the restrictions set by the data provider and will be noted when requesting access.
+            ● For individual datasets included in the SDC platform, the USDOT does not guarantee its quality, completeness, or availability beyond what is made available by the data provider.
+            ● The SDC allows users to publish and share results of their analysis and derived data to other users of the SDC. The USDOT does not guarantee the quality or the completeness of any of the user-created data or analytic procedures available on the platform.
+            ● Data from and analysis of the SDC POC may not be publicly disclosed without prior consent from DOT, OCIO, the OST Office of Public Affairs.
+            ● Once consent is obtained, the user must acknowledge in all oral or written presentations, disclosures, or publications the use of specific dataset(s), the SDC platform as part of their activities.
+          </textarea>
+
+          <label class="usa-label" for="dot-terms-and-conditions">SDC Data Use Terms and Conditions</label>
+          <textarea class="usa-textarea" id="dot-terms-and-conditions" name="dot-terms-and-conditions">
+              In addition, the use of the SDC system is subject by the following USDOT standards and requirements:
+              ● You are accessing a U.S. Government information system. This information system, including all related equipment, networks, and network devices, is provided for U.S. Government-authorized use only. Unauthorized or improper use of this system is prohibited, and may result in civil and criminal penalties, or administrative disciplinary action. The communications and data stored or transiting this system may be, for any lawful Government purpose, monitored, recorded, and subject to audit or investigation. By using this system, you understand and consent to such terms.
+              For details on how we use your information, please see our Privacy Policy.
+              
+              Failure to comply with these terms may result in termination of the user account for the site and associated data in those accounts.
+          </textarea>
+
+          <div class="usa-checkbox margin-y-10">
+            <input class="usa-checkbox__input" id="term-agreement" type="checkbox" name="term-agreement" value="agree" onchange="document.getElementById('proceed-button').disabled = !this.checked;">
+            <label class="usa-checkbox__label" for="term-agreement">I agree to the terms and conditions of the SDC and USDOT for using the SDC platform.</label>
+          </div>
+
+          <button class="usa-button" id="proceed-button" onclick="window.location.href = 'https://portal.securedatacommons.com/register'" disabled>Proceed to Log In</button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer role="contentinfo">
+    <div class="grid-container">
+        <div class="grid-row grid-gap">
+            <div class="grid-col-12 tablet:grid-col-4">
+                <a href="https://transportation.gov"><img id="dot_logo_footer" src="images/dot_logo.png" alt="Department of Transportation logo"></a>
+                <h2>USDOT Secure Data Commons Platform</h2>
+                <p><a href="https://github.com/usdot-jpo-sdc" target="_blank">VIEW THIS PROJECT ON GITHUB</a></p>
+            </div> <!-- /.grid-col -->
+            <div class="grid-col-12 tablet:grid-col-6 tablet:grid-offset-2">
+                <div class="grid-row grid-gap">
+                    <div class="grid-col-12 tablet:grid-col-6">
+                        <ul class="usa-list usa-list--unstyled">
+                            <li><a href="https://www.fhwa.dot.gov/privacy.cfm">Privacy Policy</a></li>
+                            <li><a href="https://www.fhwa.dot.gov/foia/">Freedom of Information Act (FOIA)</a></li>
+                            <li><a href="https://www.fhwa.dot.gov/accessibility/">Accessibility</a></li>
+                            <li><a href="https://www.fhwa.dot.gov/webpolicies/publishschedule.cfm">Web Policies &amp; Notices</a></li>
+                            <li><a href="https://www.transportation.gov/civil-rights/civil-rights-awareness-enforcement/no-fear-act">No Fear Act</a></li>
+                        </ul>
+                    </div> <!-- /.grid-col -->
+                    <div class="grid-col-12 tablet:grid-col-6">
+                        <ul class="usa-list usa-list--unstyled">
+                            <li><a href="https://www.oig.dot.gov/Hotline">Report Waste, Fraud and Abuse</a></li>
+                            <li><a href="https://www.transportation.gov/">U.S. Department of Transportation</a></li>
+                            <li><a href="https://www.usa.gov/">USA.gov</a></li>
+                            <li><a href="https://www.whitehouse.gov/">WhiteHouse.gov</a></li>
+                        </ul>
+                    </div> <!-- /.grid-col -->
+                </div> <!-- /.grid-row -->
+            </div> <!-- /.grid-col -->
+        </div> <!-- /.grid-row -->
+    </div> <!-- /.grid-container -->
+</footer>
+<script src="assets/js/uswds.min.js"></script>
+</body>
+</html>
