@@ -4,14 +4,6 @@
   height:100%;
 }
 
-.nextStepsBox a {
-  text-decoration: none;
-}
-
-.nextStepsBox a:hover, a:focus {
-  text-decoration: underline;
-}
-
 .smallIconContainer {
   width: 100px;
   height: 100px;
@@ -25,14 +17,6 @@
 .largeIconContainer {
   height: 200px;
   width: 200px;
-}
-
-.currentDataInfoBox a {
-  text-decoration: none;
-}
-
-.currentDataInfoBox a:focus, a:hover {
-  text-decoration: underline;
 }
 
 .lifecycleImgContainer {
@@ -101,4 +85,166 @@
 
 .greenTableBox {
   background-color: #eaf4dd !important;
+}
+
+.side-nav-align-h1 {
+  margin-top: -60px;
+}
+
+.program-offerings-list li {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+  flex-direction: row;
+}
+
+.program-offerings-list p {
+  margin-left: 15px;
+  margin-bottom: 0;
+}
+
+.program-offerings-list:first-of-type {
+  padding-right: 30px;
+}
+
+.circle-number {
+  flex: none;
+  text-align: center;
+  background: #162e51;
+  color: #fff;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.service-card {
+  position: relative;
+  height: auto;
+}
+
+.service-card .ribbon {
+  position: absolute;
+  width: 45px; 
+  left: 30px;
+  top: -5px;
+}
+
+.service-card .card-header {
+  margin-top: -30px;
+}
+
+.service-card .card-header p {
+  font-size: 16px;
+}
+
+.offering-table {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.offering-table .header {
+  background: #162e51;
+  color: #fff;
+  padding: 5px 15px;
+  font-weight: bold;
+}
+
+.offering-table .header--bronze {
+  background: #A8692F;
+  color: #000;
+  text-align: center;
+}
+
+.offering-table .header--silver {
+  background: #ADADAD;
+  color: #000;
+  text-align: center;
+}
+
+.offering-table .header--gold {
+  background: #B38C00;
+  color: #000;
+  text-align: center;
+}
+
+.offering-table .col {
+  padding: 5px 15px;
+  border: 1px solid #000;
+  border-right: 0;
+  border-top: 0;
+}
+
+.pricing-row .col:last-of-type {
+  border-right: 1px solid #000;
+}
+
+.offering-table > .grid-row:last-of-type .col,
+.offering-table > .grid-row:nth-last-child(2) .col:first-of-type {
+  border-bottom: 1px solid #000;
+}
+
+.offering-table .col--bronze {
+  background: #EDD2B9;
+  text-align: center;
+}
+
+.offering-table .col--silver {
+  background: #EEEEEE;
+  text-align: center;
+}
+
+.offering-table .col--gold {
+  background: #F8EECC;
+  text-align: center;
+}
+
+@media all and (max-width: 39.99em) {
+  .text-center, .text-right {
+    text-align: left;
+  }
+
+  .side-nav-align-h1 {
+    margin-top: 0;
+  }
+
+  .offering-table .col--title {
+    background: #162e51;
+    color: #fff;
+  }
+
+  .offering-table .header--bronze,
+  .offering-table .header--silver,
+  .offering-table .header--gold {
+    text-align: left;
+  }
+
+  .pricing-row .col:first-of-type {
+    border-left: 0;
+  }
+
+  .pricing-row .col {
+    text-align: left;
+    border: 0;
+  }
+
+  .pricing-row .col:last-of-type {
+    border: 0;
+  }
+
+  .pricing-row .display-flex {
+    display: block;
+  }
+
+  .pricing-row .grid-row .grid-col:first-of-type {
+    font-weight: bold;
+  }
+
+  .pricing-row .col--bronze, 
+  .pricing-row .col--silver, 
+  .pricing-row .col--gold {
+    background: none;
+  }
 }
