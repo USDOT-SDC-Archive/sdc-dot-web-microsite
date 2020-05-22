@@ -1,3 +1,29 @@
+
+a:hover, a:active {
+  color: #1a4480;
+}
+
+a:visited {
+  color: #54278f;
+} 
+
+a {
+  color: #005ea2;
+}
+
+.usa-logo a:visited {
+  color: #194179 !important;
+}
+
+
+.usa-sidenav a:visited {
+  color: #565c65;
+}
+
+a.usa-current:visited {
+  color: #005ea2 !important;
+}
+
 .nextStepsBox {
   background-color: #f2f2f2;
   border-radius: 6px;
@@ -201,7 +227,7 @@
   text-align: center;
 }
 
-@media all and (max-width: 39.99em) {
+@media all and (max-width: 63.99em) {
   .text-center, .text-right {
     text-align: left;
   }
@@ -213,12 +239,14 @@
   .offering-table .col--title {
     background: #162e51;
     color: #fff;
+    font-weight: bold;
   }
 
   .offering-table .header--bronze,
   .offering-table .header--silver,
   .offering-table .header--gold {
     text-align: left;
+    font-weight: bold;
   }
 
   .pricing-row .col:first-of-type {
@@ -236,6 +264,15 @@
 
   .pricing-row .display-flex {
     display: block;
+  }
+
+  .pricing-row .grid-row .grid-col div {
+    display: inline;
+    padding-left: 2px;
+  }
+
+  .pricing-row .grid-row .grid-col:last-of-type b {
+    font-weight: normal;
   }
 
   .pricing-row .grid-row .grid-col:first-of-type {
