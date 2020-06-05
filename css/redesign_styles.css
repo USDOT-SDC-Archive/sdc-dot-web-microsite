@@ -24,6 +24,23 @@ a.usa-current:visited {
   color: #005ea2 !important;
 }
 
+.usa-banner__inner {
+  position: relative;
+}
+
+.usa-banner__inner .usa-nav__secondary {
+  bottom: 1em;
+}
+
+.usa-nav__secondary a {
+  color: #fff;
+}
+
+.usa-nav__secondary a:visited,
+.usa-nav__secondary a:hover {
+  color: #fff;
+}
+
 .nextStepsBox {
   background-color: #f2f2f2;
   border-radius: 6px;
@@ -95,10 +112,19 @@ a.usa-current:visited {
 
 #footer a {
   text-decoration: none;
+  color: #fff;
 }
 
 #footer a:focus, #footer a:hover {
   text-decoration: underline;
+  color: #fff;
+}
+
+.fa-external-link-alt {
+  position: relative;
+  top: -2px;
+  margin-left: 5px;
+  font-size: 12px;
 }
 
 .trainingVideo {
@@ -117,11 +143,21 @@ a.usa-current:visited {
   margin-top: -60px;
 }
 
+.program-offerings-list {
+  columns: 2;
+}
+
 .program-offerings-list li {
   display: flex;
   margin-bottom: 15px;
   align-items: center;
   flex-direction: row;
+}
+
+.program-offerings-list li {
+  flex: 1 0 0;
+  width: auto;
+  max-width: 100%;
 }
 
 .program-offerings-list p {

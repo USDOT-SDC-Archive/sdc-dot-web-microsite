@@ -45,8 +45,17 @@
   <div class="usa-banner__header" id="dot-header">
     <div class="usa-banner__inner">
       <a href="https://transportation.gov"><img id="dot_logo" src="images/dot_logo.png" alt="US Department of Transportation"></a>
+    
+      <div class="usa-nav__secondary display-none desktop:display-block">
+        <ul class="usa-nav__secondary-links">
+          <li class="usa-nav__secondary-item"><a class="externalDotLink" href="https://www.its.dot.gov/" target="_blank">ABOUT ITS JPO</a></li>
+          <li class="usa-nav__secondary-item"><a class="externalDotLink" href="https://www.transportation.gov/mission/about-us" target="_blank">ABOUT U.S. DOT</a></li>
+          <li class="usa-nav__secondary-item"><a class="externalDotLink" href="https://www.transportation.gov/briefingroom" target="_blank">U.S. DOT BRIEFING ROOM</a></li>
+          <li class="usa-nav__secondary-item"><a class="externalDotLink" href="https://www.transportation.gov/our-activities" target="_blank">U.S. DOT ACTIVITIES</a></li>
+        </ul>
+      </div>
     </div>
-    </div>
+  </div>
   <div class="usa-nav-container">
     <div class="usa-navbar">
       <div class="usa-logo" id="basic-logo"> <em class="usa-logo__text"><a href="index.html" title="Home" aria-label="Secure Data Commons Home">Secure Data Commons</a></em> </div>
@@ -56,8 +65,27 @@
       <button class="usa-nav__close"><img src="assets/img/close.svg" alt="close"></button>
       <ul class="usa-nav__primary usa-accordion">
         <li class="usa-nav__primary-item"> <a id="home_menu" class="usa-nav__link" href="index.html"><span>Home</span></a> </li>
-        <li class="usa-nav__primary-item"> <a id="about_menu" class="usa-nav__link" href="about.html"><span>About SDC</span></a> </li>
-        <li class="usa-nav__primary-item"> <a id="getting_started_menu" class="usa-nav__link" href="what_you_need_to_know.html"><span>Getting Started</span></a> </li>
+
+        <li class="usa-nav__primary-item"> 
+          <button id="about_menu" class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="about_menu_sub_menu"><span>About SDC</span></button> 
+          <ul id="about_menu_sub_menu" class="usa-nav__submenu" hidden="">
+            <li class="usa-nav__submenu-item"><a href="about.html" class="">What Is SDC?</a></li>
+            <li class="usa-nav__submenu-item"><a href="sdc_lifecycle.html" class="">SDC Lifecycle</a></li>
+            <li class="usa-nav__submenu-item"><a href="current_data.html" class="">Current Data Available</a></li>
+          </ul>      
+        </li>
+
+
+        <li class="usa-nav__primary-item"> 
+          <button id="getting_started_menu" class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="getting_started_sub_menu"><span>Getting Started</span></button> 
+          <ul id="getting_started_sub_menu" class="usa-nav__submenu" hidden="">
+            <li class="usa-nav__submenu-item"><a href="what_you_need_to_know.html">What You Need to Know</a></li>
+            <li class="usa-nav__submenu-item"><a href="starting_a_project.html">Starting a Project</a></li>
+            <li class="usa-nav__submenu-item"><a href="getting_data_to_sdc.html">Getting Data to SDC</a></li>
+            <li class="usa-nav__submenu-item"><a href="conducting_analysis.html">Conducting Analysis</a></li>
+          </ul>      
+        </li>
+
         <li class="usa-nav__primary-item"> <a id="support_menu" class="usa-nav__link" href="support.html"><span>Support</span></a> </li>
         <li class="usa-nav__primary-item"> <a class="usa-nav__link" href="https://github.com/usdot-jpo-sdc" target="_blank"><span>GitHub Project</span> <img src="assets/img/external-link.svg" alt="external link" class="usa-header__primary-link-icon-social"></a> </li>
         <li class="usa-nav__primary-item">
@@ -67,7 +95,7 @@
           </div>
         </li>
       </ul>
-      <div class="usa-nav__secondary">
+      <div class="usa-nav__secondary desktop:display-none">
         <ul class="usa-nav__secondary-links">
           <li class="usa-nav__secondary-item"><a class="externalDotLink" href="https://www.its.dot.gov/" target="_blank">ABOUT ITS JPO</a></li>
           <li class="usa-nav__secondary-item"><a class="externalDotLink" href="https://www.transportation.gov/mission/about-us" target="_blank">ABOUT U.S. DOT</a></li>
