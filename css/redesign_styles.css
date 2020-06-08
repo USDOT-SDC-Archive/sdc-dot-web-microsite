@@ -120,6 +120,10 @@ a.usa-current:visited {
   color: #fff;
 }
 
+.version-history {
+  padding: 60px 0 0;
+}
+
 .fa-external-link-alt {
   position: relative;
   top: -2px;
@@ -145,40 +149,11 @@ a.usa-current:visited {
 
 .program-offerings-list {
   columns: 2;
-}
-
-.program-offerings-list li {
-  display: flex;
-  margin-bottom: 15px;
-  align-items: center;
-  flex-direction: row;
-}
-
-.program-offerings-list li {
-  flex: 1 0 0;
-  width: auto;
-  max-width: 100%;
+  padding-left: 20px;
 }
 
 .program-offerings-list p {
-  margin-left: 15px;
-  margin-bottom: 0;
-}
-
-.program-offerings-list:first-of-type {
-  padding-right: 30px;
-}
-
-.circle-number {
-  flex: none;
-  text-align: center;
-  background: #162e51;
-  color: #fff;
-  border-radius: 50%;
-  height: 30px;
-  width: 30px;
-  font-size: 20px;
-  font-weight: bold;
+  margin: 0 30px 15px 0;
 }
 
 .service-card {
