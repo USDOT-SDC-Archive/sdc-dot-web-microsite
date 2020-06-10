@@ -54,6 +54,7 @@ The Secure Data Commons (SDC) is a cloud-based analytics platform that enables a
 What's New in Release 2.5:
 - New page, enablement services program, under Getting Started to explain the ESPO offerings
 - 508 fixes for navigation. Removed the sub-navigation from the footer in mobile. The main naviation now has a drop-down in both desktop and mobile views.
+- Add last updated to all pages.
 
 <strong>December 10, 2019. SDC sdc-dot-web-microsite Release 2.4</strong><br/>
 What's New in Release 2.4:

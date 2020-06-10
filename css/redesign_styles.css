@@ -122,6 +122,8 @@ a.usa-current:visited {
 
 .version-history {
   padding: 60px 0 0;
+  font-size: 14px;
+  text-align: right;
 }
 
 .fa-external-link-alt {
