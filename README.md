@@ -50,11 +50,28 @@ The Secure Data Commons (SDC) is a cloud-based analytics platform that enables a
 
 ## I. Release Notes
 
-<strong>June 12, 2020. SDC sdc-dot-web-microsite Release 2.5</strong><br/>
-What's New in Release 2.5:
+<strong>June 12, 2020. SDC sdc-dot-web-microsite Release 2.6</strong><br/>
+What's New in Release 2.6:
 - New page, enablement services program, under Getting Started to explain the ESPO offerings
 - 508 fixes for navigation. Removed the sub-navigation from the footer in mobile. The main naviation now has a drop-down in both desktop and mobile views.
 - Add last updated to all pages.
+
+<strong>February 6, 2020. SDC sdc-dot-web-microsite Release 2.5</strong><br/>
+What's New in Release 2.5:
+Updated the Data Analyst user guide with the following:
+- Added description of data ingestion and curation to Chapter 1 
+- Added description and link to instructions for setting up and logging in with Login.gov in Chapter 2 
+- Added note and example command to the “Download User Data from S3 Bucket through Portal” section under Chapter 2 
+- Added FMI section and link to GitLab page with more sample queries to Chapter 4
+- Added note about printing documents in Chapter 5 
+- Added Chapter 6 Setting Up SDC with GitLab Repositories 
+- Added more commands to the “AWS S3 CLI Commands” section under Chapter 7 <br/>
+  
+Updated the Data Provider user guide with the following:
+- Updated links throughout for the Data Analyst user guide
+- Updated the Chapter 4 title to "Data Ingestion"
+- Fixed grammar throughout.
+
 
 <strong>December 10, 2019. SDC sdc-dot-web-microsite Release 2.4</strong><br/>
 What's New in Release 2.4:
