@@ -50,6 +50,10 @@ The Secure Data Commons (SDC) is a cloud-based analytics platform that enables a
 
 ## I. Release Notes
 
+<strong>June 24, 2020. SDC sdc-dot-web-microsite Release 2.6.1</strong><br/>
+What's New in Release 2.6.1:
+- Update SDC offering PDF to be 508 compliant
+
 <strong>June 12, 2020. SDC sdc-dot-web-microsite Release 2.6</strong><br/>
 What's New in Release 2.6:
 - New page, enablement services program, under Getting Started to explain the ESPO offerings
