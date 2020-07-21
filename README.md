@@ -49,6 +49,11 @@ The Secure Data Commons (SDC) is a cloud-based analytics platform that enables a
 <a name="release-notes"/>
 
 ## I. Release Notes
+<strong>July 23, 2020. SDC sdc-dot-web-microsite Release 2.6.2</strong><br/>
+What's New in Release 2.6.2:
+- Link on https://its.dot.gov/data/secure/ “login” button will go straight to dot.gov vs .com
+- User Guide updated with .GOV instructions
+- Register - Access Request PDF updated to account for Third Party Analyst
 
 <strong>June 24, 2020. SDC sdc-dot-web-microsite Release 2.6.1</strong><br/>
 What's New in Release 2.6.1:
