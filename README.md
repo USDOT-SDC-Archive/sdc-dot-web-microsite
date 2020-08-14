@@ -49,6 +49,10 @@ The Secure Data Commons (SDC) is a cloud-based analytics platform that enables a
 <a name="release-notes"/>
 
 ## I. Release Notes
+<strong>August 21, 2020. SDC sdc-dot-web-microsite Release 2.7</strong><br/>
+What's New in Release 2.7:
+- Change SDC support email address from support@securedatacommons.com to sdc-support@dot.gov
+
 <strong>July 23, 2020. SDC sdc-dot-web-microsite Release 2.6.2</strong><br/>
 What's New in Release 2.6.2:
 - Link on https://its.dot.gov/data/secure/ “login” button will go straight to dot.gov vs .com
@@ -194,7 +198,7 @@ August 8, 2019. SDC sdc-dot-web-microsite Release 2.1<br/>
 Distributed under the XYZ license. See LICENSE for more information.
 https://github.com/yourname/github-link -->
 
-For any queries you can reach to support@securedatacommons.com
+For any queries you can reach to sdc-support@dot.gov
 
 
 <!---                           -->
@@ -242,7 +246,7 @@ Tags: transportation, connected vehicles, intelligent transportation systems
 
 Labor Hours:
 
-Contact Name: support@securedatacommons.com
+Contact Name: sdc-support@dot.gov
 
 <!-- Contact Phone: -->
 
