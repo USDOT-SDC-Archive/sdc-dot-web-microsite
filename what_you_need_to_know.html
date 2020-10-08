@@ -2,20 +2,683 @@
 <html lang="en">
 <head>
   <!-- USWDS Styles -->
-  <link rel="stylesheet" href="assets/css/uswds.min.css">
-  <!-- SDC Styles -->
-  <link rel="stylesheet" href="css/styles.css">
-  <!-- Redesign Styles -->
-  <link rel="stylesheet" href="css/redesign_styles.css">
+  <!-- USWDS Styles -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.9.0/js/uswds.min.js" integrity="sha512-DK4Dfv782z/2seHu61hJL5WvFg95vZ64fKsqzeV7vTNcx01Ajp1kq5+w0QUNQ6GSakYyj6Mw0LZ/ddL5rNVMYQ==" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.9.0/css/uswds.min.css" integrity="sha512-1JfROzJI5km8+inC3KrHAsJ4Ufjl2nD7/TbCBXoMUeXi0LIAZntfLQr2S6ifV0lCuO0mWOOlNJNTgKzkj7b7wA==" crossorigin="anonymous" />
+
+
+  <style>
+
+    .usa-prose>p,p,.usa-list li,.usa-prose>ol li,.usa-prose>ul li{
+      font-weight:300
+    }
+    p:first-of-type{
+      margin-top:0
+    }
+    .list-bullets{
+      font-weight:300
+    }
+    .usa-prose>table thead td,.usa-prose>table thead th,.usa-table thead td,.usa-table thead th{
+      background-color:#194179;
+      color:#fff;
+      border-color:#fff
+    }
+    .usa-prose>table td,.usa-prose>table th,.usa-table td,.usa-table th{
+      background-color:transparent
+    }
+    .table-striped tbody tr:nth-of-type(odd){
+      background-color:rgba(0,0,0,0.05)
+    }
+    .table-responsive{
+      display:block;
+      width:100%;
+      overflow-x:auto;
+      -webkit-overflow-scrolling:touch
+    }
+    p.intro{
+      font-size:1.5rem
+    }
+    .usa-nav-container,.usa-banner__inner,.grid-container{
+      margin-left:auto;
+      margin-right:auto;
+      max-width:75rem
+    }
+    .usa-button{
+      margin-bottom:1rem
+    }
+    .subsection{
+      background-color:#f2f2f2;
+      padding:4rem 0;
+      margin-top:1rem
+    }
+    #dot-header{
+      height:5rem;
+      padding-top:1.25rem;
+      padding-bottom:1.25rem;
+      background-color:#194179;
+      width:100%
+    }
+    #dot-header #dot_logo{
+      height:2rem
+    }
+    @media (min-width: 64em){
+      #dot-header #dot_logo{
+          height:2.5rem
+      }
+    }
+    @media (min-width: 64em){
+      .usa-logo{
+          margin-top:1.5rem;
+          margin-bottom:1.75rem;
+          font-size:1.75rem;
+          color:#194179
+      }
+    }
+    @media (max-width: 1180px) and (min-width: 1024px){
+      .usa-logo{
+          font-size:1.5rem
+      }
+    }
+    .usa-logo a{
+      color:#194179
+    }
+    .usa-nav__secondary-links a{
+      color:#fff;
+      font-size:0.8rem
+    }
+    .usa-nav__secondary-links a:hover,.usa-nav__secondary-links a:focus{
+      color:#fff;
+      text-decoration: underline;
+    }
+    @media (min-width: 64em){
+      .usa-nav__submenu .usa-nav__submenu-item+*{
+          margin-top:0
+      }
+      .usa-nav__submenu .usa-nav__submenu-item a{
+          width:100%;
+          display:block;
+          text-decoration:none;
+          padding:1rem
+      }
+      .usa-nav__submenu .usa-nav__submenu-item a:focus,.usa-nav__submenu .usa-nav__submenu-item a:hover{
+          background-color:#005ea2;
+          text-decoration:none;
+          padding:1rem
+      }
+      .usa-nav__submenu-item a.usa-current,.usa-nav__submenu-item a.usa-current:focus,.usa-nav__submenu-item a.usa-current:hover{
+          background-color:#005ea2;
+          text-decoration:none
+      }
+      .usa-nav__submenu .usa-nav__submenu-item a.usa-current:after{
+          display:none
+      }
+      .usa-nav__submenu{
+          padding:0
+      }
+      .usa-nav__secondary{
+          bottom:7.25rem;
+          position:absolute;
+          right:1rem
+      }
+      .usa-nav__secondary-links .usa-nav__secondary-item+.usa-nav__secondary-item:before{
+          color:#08e8f6;
+          padding-right:.5rem
+      }
+    }
+    @media (min-width: 64em){
+      .usa-nav__primary>.usa-nav__primary-item>a,.usa-nav__primary button{
+          margin-top:0.25rem;
+          padding:2rem 1.5rem
+      }
+    }
+    @media (max-width: 63.99em){
+      .usa-nav__primary{
+          order:1
+      }
+      .usa-nav__secondary{
+          bottom:auto;
+          position:relative;
+          right:auto;
+          margin:0;
+          order:2
+      }
+      .usa-nav__secondary-links a{
+          color:#565c65
+      }
+    }
+    .usa-nav__primary-item a .usa-header__primary-link-icon-social{
+      height:.7rem;
+      width:.7rem;
+      background-color:transparent;
+      margin-left:.2rem
+    }
+    footer{
+      background-color:#194179;
+      border-top:1px solid #14335e;
+      padding-top:4rem;
+      padding-bottom:4rem;
+      color:#fff
+    }
+    footer #dot_logo_footer{
+      max-width:220px;
+      height:auto;
+      margin-bottom:1rem
+    }
+    footer a{
+      color:#fff
+    }
+    footer h2{
+      margin:0
+    }
+    footer .address{
+      font-size:0.85rem
+    }
+    footer ul.list-unstyled>li{
+      font-size:0.85rem
+    }
+    #top-info{
+      background-color:#272727;
+      background-position:50% 50%;
+      background-repeat:no-repeat;
+      background-size:cover;
+      padding:3rem 0
+    }
+    #top-info .usa-button--outline {
+      background-color: #FFFFFF;
+      text-shadow: none;
+    }
+    #top-info .hero-intro{
+      color:#fff !important;
+      text-align:center;
+      line-height:1.2;
+      text-shadow:0px 0px 8px rgba(0,0,0,0.9)
+    }
+    #top-info .hero-intro h1{
+      font-size:3.4rem;
+      font-weight:600
+    }
+    #top-info .hero-intro h2{
+      font-size:3.2rem;
+      font-weight:600
+    }
+    #top-info .hero-intro p {
+      font-size: 1.8rem;
+      font-weight: 400;
+    }
+    #top-info .hero-intro hr{
+      margin-top:1rem;
+      margin-bottom:1rem;
+      border:0;
+      border-top:1px solid rgba(255,255,255,0.2)
+    }
+    @media (max-width: 63.99em){
+      #top-info .hero-intro{
+          font-size:1.6rem;
+          line-height:1.1
+      }
+    }
+
+    /* Link Box */
+    a.link-box {
+      background-color: #FFFFFF;
+      margin: 0 1rem 2rem;
+      padding: 1rem 2rem;
+      display: block;
+      height: 100%;
+      text-decoration: none;
+      transition: all 0.3s;
+      position: relative;
+      top: 0;
+      border-radius: 0.25rem;
+      border: 0.45rem solid #e7f6f8; }
+      a.link-box h3 {
+        min-height: 56px; }
+      a.link-box h3, a.link-box h4 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-top: 0.25rem;
+        margin-bottom: .5rem;
+        color: #272727; }
+      a.link-box p {
+        font-weight: 300;
+        color: #272727;
+        margin: 0; }
+
+    a.link-box:focus,
+    a.link-box:hover {
+      top: -0.25rem;
+      border-color: #337AB9;
+      -webkit-box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3); }
+
+    @media (max-width: 640px) {
+      a.link-box {
+        height: auto; }
+        a.link-box h4 {
+          font-size: 1.3rem; 
+        } 
+    }
+
+    .card {
+      position: relative;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+      height: 100%; }
+      .card .sdc-card {
+        padding: 1.25rem;
+        margin-bottom: 30px;
+        height: 100%;
+        border-radius: .25rem;
+        border: 3px solid #f2f2f2; }
+        .card .sdc-card h4 {
+          font-size: 1.5rem;
+          font-weight: 500;
+          margin-top: 0;
+          margin-bottom: 0.5rem; }
+        .card .sdc-card ul.list-bullets {
+          margin: 0;
+          font-weight: 300; }
+
+    .accessLink {
+      text-transform: uppercase;
+      font-size: .65rem;
+      text-align: center;
+      line-height: .9;
+      color: #565c65;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a.accessLink:hover, a.accessLink:focus {
+      text-decoration: underline;
+    }
+
+    a.login_button {
+      margin: 1rem 0.5rem 0.2rem;
+      color: white;
+    }
+    /*# sourceMappingURL=styles.css.map */
+
+    a:hover, a:active {
+      color: #1a4480;
+    }
+
+    a:visited {
+      color: #54278f;
+    } 
+
+    a {
+      color: #005ea2;
+    }
+
+    .usa-logo a:visited {
+      color: #194179 !important;
+    }
+
+
+    .usa-sidenav a:visited {
+      color: #565c65;
+    }
+
+    a.usa-current:visited {
+      color: #005ea2 !important;
+    }
+
+    .usa-banner__inner {
+      position: relative;
+    }
+
+    .usa-banner__inner .usa-nav__secondary {
+      bottom: 1em;
+    }
+
+    .usa-nav__secondary a {
+      color: #fff;
+    }
+
+    .usa-nav__secondary a:visited,
+    .usa-nav__secondary a:hover {
+      color: #fff;
+    }
+
+    .nextStepsBox {
+      background-color: #f2f2f2;
+      border-radius: 6px;
+      height:100%;
+    }
+
+    .smallIconContainer {
+      width: 100px;
+      height: 100px;
+    }
+
+    .mediumIconContainer {
+      height: 150px;
+      width: 150px;
+    }
+
+    .largeIconContainer {
+      height: 200px;
+      width: 200px;
+    }
+
+    .lifecycleImgContainer {
+      height: 100px;
+      width: 100px;
+    }
+
+    .lifecycleOrangeBorder {
+      border: solid #ffbe2e 8px;
+    }
+
+    .lifecycleGreenBorder {
+      border: solid #98D036 8px;
+    }
+
+    .lifecyclePurpleBorder {
+      border: solid #C39DEB 8px;
+    }
+
+    .lifecycleDownArrowIconContainer {
+      background: white;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      box-shadow: 0 0 5px 2px lightgray;
+      text-align: center;
+      display: table;
+      z-index: 1;
+    }
+
+    @media (max-width: 63.99em) {
+      .lifecycleHeader {
+        text-align: center;
+      }
+      .externalDotLink:focus, .externalDotLink:hover {
+        color: #565656 !important
+      }
+    }
+
+    .lifecycleDownArrowIcon {
+      font-size:30px;
+      color: grey;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    #last_hr {
+      border-top: 1px solid lightgrey;
+    }
+
+    #footer a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    #footer a:focus, #footer a:hover {
+      text-decoration: underline;
+      color: #fff;
+    }
+
+    .version-history {
+      padding: 60px 0 0;
+      font-size: 14px;
+      text-align: right;
+    }
+
+    .fa-external-link-alt {
+      position: relative;
+      top: -2px;
+      margin-left: 5px;
+      font-size: 12px;
+    }
+
+    .trainingVideo {
+      width: 23rem;
+    }
+
+    .dataList li {
+      margin-bottom: 0.5rem;
+    }
+
+    .greenTableBox {
+      background-color: #eaf4dd !important;
+    }
+
+    .side-nav-align-h1 {
+      margin-top: -60px;
+    }
+
+    .program-offerings-list {
+      columns: 2;
+      padding-left: 20px;
+    }
+
+    .program-offerings-list p {
+      margin: 0 30px 15px 0;
+    }
+
+    .service-card {
+      position: relative;
+      height: auto;
+    }
+
+    .service-card .ribbon {
+      position: absolute;
+      width: 45px; 
+      left: 30px;
+      top: -5px;
+    }
+
+    .service-card .card-header {
+      margin-top: -30px;
+    }
+
+    .service-card .card-header p {
+      font-size: 16px;
+    }
+
+    .offering-table {
+      margin-top: 15px;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+
+    .offering-table .header {
+      background: #162e51;
+      color: #fff;
+      padding: 5px 15px;
+      font-weight: bold;
+    }
+
+    .offering-table .header--bronze {
+      background: #A8692F;
+      color: #000;
+      text-align: center;
+    }
+
+    .offering-table .header--silver {
+      background: #ADADAD;
+      color: #000;
+      text-align: center;
+    }
+
+    .offering-table .header--gold {
+      background: #B38C00;
+      color: #000;
+      text-align: center;
+    }
+
+    .offering-table .col {
+      padding: 5px 15px;
+      border: 1px solid #000;
+      border-right: 0;
+      border-top: 0;
+    }
+
+    .pricing-row .col:last-of-type {
+      border-right: 1px solid #000;
+    }
+
+    .offering-table > .grid-row:last-of-type .col,
+    .offering-table > .grid-row:nth-last-child(2) .col:first-of-type {
+      border-bottom: 1px solid #000;
+    }
+
+    .offering-table .col--bronze {
+      background: #EDD2B9;
+      text-align: center;
+    }
+
+    .offering-table .col--silver {
+      background: #EEEEEE;
+      text-align: center;
+    }
+
+    .offering-table .col--gold {
+      background: #F8EECC;
+      text-align: center;
+    }
+
+    @media all and (max-width: 63.99em) {
+      .text-center, .text-right {
+        text-align: left;
+      }
+
+      .side-nav-align-h1 {
+        margin-top: 0;
+      }
+
+      .offering-table .col--title {
+        background: #162e51;
+        color: #fff;
+        font-weight: bold;
+      }
+
+      .offering-table .header--bronze,
+      .offering-table .header--silver,
+      .offering-table .header--gold {
+        text-align: left;
+        font-weight: bold;
+      }
+
+      .pricing-row .col:first-of-type {
+        border-left: 0;
+      }
+
+      .pricing-row .col {
+        text-align: left;
+        border: 0;
+      }
+
+      .pricing-row .col:last-of-type {
+        border: 0;
+      }
+
+      .pricing-row .display-flex {
+        display: block;
+      }
+
+      .pricing-row .grid-row .grid-col div {
+        display: inline;
+        padding-left: 2px;
+      }
+
+      .pricing-row .grid-row .grid-col:last-of-type b {
+        font-weight: normal;
+      }
+
+      .pricing-row .grid-row .grid-col:first-of-type {
+        font-weight: bold;
+      }
+
+      .pricing-row .col--bronze, 
+      .pricing-row .col--silver, 
+      .pricing-row .col--gold {
+        background: none;
+      }
+    }
+  </style>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('#footer').load('footer.html');
-      $('#banner').load('banner.html');
-      $('#header').load('header.html');
-    });
-  </script>
-  <div id="header"></div>
+
+  <div id="header">
+
+    <script>
+      $(document).ready(function() {
+        var current_page = $('#banner').data('current-page');
+        $('#' + current_page).addClass('usa-current');
+        $('#' + current_page).find('a').attr('aria-current', 'page');
+        if (current_page == 'home_menu') {
+          $('#last_hr').hide();
+        }
+      });
+    </script>
+
+    <div class="usa-overlay"></div>
+    <header id="header" class="usa-header usa-header--basic" role="banner">
+
+      <div class="usa-nav-container">
+        <div class="usa-navbar">
+          <div class="usa-logo" id="basic-logo"> <em class="usa-logo__text"><a href="index.html" title="Home" aria-label="Secure Data Commons Home">Secure Data Commons</a></em> </div>
+          <button class="usa-menu-btn">Menu</button>
+        </div>
+        <nav role="navigation" class="usa-nav">
+          <button class="usa-nav__close"><?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><title>close</title><path fill="#565C65" fill-rule="evenodd" d="M57.042 1.15l5.809 5.808a4 4 0 0 1 0 5.657L43.465 32l19.386 19.385a4 4 0 0 1 0 5.657l-5.809 5.809a4 4 0 0 1-5.657 0L32 43.465 12.615 62.851a4 4 0 0 1-5.657 0l-5.809-5.809a4 4 0 0 1 0-5.657L20.535 32 1.149 12.615a4 4 0 0 1 0-5.657l5.809-5.809a4 4 0 0 1 5.657 0L32 20.535 51.385 1.149a4 4 0 0 1 5.657 0z"/></svg></button>
+          <ul class="usa-nav__primary usa-accordion">
+            <li class="usa-nav__primary-item"> <a id="home_menu" class="usa-nav__link" href="index.html"><span>Home</span></a> </li>
+    
+            <li class="usa-nav__primary-item"> 
+              <button id="about_menu" class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="about_menu_sub_menu"><span>About SDC</span></button> 
+              <ul id="about_menu_sub_menu" class="usa-nav__submenu" hidden="">
+                <li class="usa-nav__submenu-item"><a href="about.html" class="">What Is SDC?</a></li>
+                <li class="usa-nav__submenu-item"><a href="sdc_lifecycle.html" class="">SDC Lifecycle</a></li>
+                <li class="usa-nav__submenu-item"><a href="current_data.html" class="">Current Data Available</a></li>
+              </ul>      
+            </li>
+    
+    
+            <li class="usa-nav__primary-item"> 
+              <button id="getting_started_menu" class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="getting_started_sub_menu"><span>Getting Started</span></button> 
+              <ul id="getting_started_sub_menu" class="usa-nav__submenu" hidden="">
+                <li class="usa-nav__submenu-item"><a href="what_you_need_to_know.html">What You Need to Know</a></li>
+                <li class="usa-nav__submenu-item"><a href="starting_a_project.html">Starting a Project</a></li>
+                <li class="usa-nav__submenu-item"><a href="getting_data_to_sdc.html">Getting Data to SDC</a></li>
+                <li class="usa-nav__submenu-item"><a href="conducting_analysis.html">Conducting Analysis</a></li>
+                <li class="usa-nav__submenu-item"><a href="enablement_services_program.html">Enablement Services Program</a></li>
+              </ul>      
+            </li>
+    
+            <li class="usa-nav__primary-item"> <a id="support_menu" class="usa-nav__link" href="support.html"><span>Support</span></a> </li>
+            <li class="usa-nav__primary-item"> <a class="usa-nav__link" href="https://github.com/usdot-jpo-sdc" target="_blank"><span>GitHub Project</span> </a> </li>
+            <li class="usa-nav__primary-item">
+              <div class="display-flex flex-column">
+                <a class="login_button usa-button" href="https://portal.sdc.dot.gov/register">Login</a>
+                <a class="accessLink" href="files/SDCAccessRequestForm.pdf" target="_blank">Request Access</a>
+              </div>
+            </li>
+          </ul>
+          <div class="usa-nav__secondary desktop:display-none">
+            <ul class="usa-nav__secondary-links">
+              <li class="usa-nav__secondary-item"><a class="externalDotLink" href="https://www.its.dot.gov/" target="_blank">ABOUT ITS JPO</a></li>
+              <li class="usa-nav__secondary-item"><a class="externalDotLink" href="https://www.transportation.gov/mission/about-us" target="_blank">ABOUT U.S. DOT</a></li>
+              <li class="usa-nav__secondary-item"><a class="externalDotLink" href="https://www.transportation.gov/briefingroom" target="_blank">U.S. DOT BRIEFING ROOM</a></li>
+              <li class="usa-nav__secondary-item"><a class="externalDotLink" href="https://www.transportation.gov/our-activities" target="_blank">U.S. DOT ACTIVITIES</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <hr id="last_hr" class="margin-top-0" style>
+
+  </div>
   <title>Secure Data Commons - What You Need to Know</title>
 </head>
 
@@ -97,8 +760,48 @@
         <div class="grid-row">
           <div class="grid-col-12 tablet:grid-col-2">
             <div class="smallIconContainer margin-x-auto">
-              <img src="images/svgs/SDC_Icon_Technical_Requirements.svg" alt="">
-            </div>
+              <?xml version="1.0" encoding="utf-8"?>
+              <!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+              <style type="text/css">
+                .st0{fill:#A6325C;}
+                .st1{fill:#FF912B;}
+                .st2{fill:#40BED3;}
+                .st3{fill:#213B4F;}
+                .st4{fill-rule:evenodd;clip-rule:evenodd;fill:#FF912B;}
+                .st5{fill:#231F20;}
+                .st6{fill:none;}
+                .st7{fill:#E68429;}
+                .st8{fill:#CC8035;}
+                .st9{fill:#DBE0E3;}
+                .st10{fill:#BCC4CA;}
+                .st11{fill:#FFFFFF;}
+                .st12{fill:#282D33;}
+                .st13{fill:#E3E3E3;}
+              </style>
+              <g id="Icon16">
+                <path class="st1" d="M42.9,28.9h14.1c0.4,0,0.7-0.3,0.7-0.7v-1.9c0-1.8-1.5-3.3-3.3-3.3h-0.4c-0.5-1.8-2.1-3-4.1-3
+                  c-1.9,0-3.6,1.3-4.1,3h-0.4c-1.8,0-3.3,1.5-3.3,3.3v1.9C42.3,28.6,42.6,28.9,42.9,28.9z M50,22.6c0.9,0,1.7,0.8,1.7,1.7
+                  c0,0.9-0.8,1.7-1.7,1.7c-0.9,0-1.7-0.8-1.7-1.7C48.3,23.4,49.1,22.6,50,22.6z"/>
+                <path class="st3" d="M68.8,25.6h-9.9v2h9.9c0.3,0,0.5,0.2,0.5,0.5v49.4c0,0.3-0.2,0.5-0.5,0.5H31.2c-0.3,0-0.5-0.2-0.5-0.5V28.1
+                  c0-0.3,0.1-0.5,0.2-0.5h9.5v-2h-9.5c-1.2,0-2.2,1.1-2.2,2.5v49.4c0,1.4,1.1,2.5,2.5,2.5h37.5c1.4,0,2.5-1.1,2.5-2.5V28.1
+                  C71.3,26.7,70.2,25.6,68.8,25.6z"/>
+                <rect x="47.7" y="36.8" class="st3" width="17.3" height="1.8"/>
+                <path class="st2" d="M38.6,32.3c-3.1,0-5.6,2.5-5.6,5.6s2.5,5.6,5.6,5.6c3.1,0,5.6-2.5,5.6-5.6S41.7,32.3,38.6,32.3z M38.6,41.5
+                  c-2,0-3.7-1.7-3.7-3.7c0-2,1.7-3.7,3.7-3.7c1,0,1.9,0.4,2.5,1l-2.5,2.5l-1.5-1.5l-1.3,1.3l2.9,2.9l3.5-3.5c0.1,0.3,0.1,0.6,0.1,1
+                  C42.3,39.9,40.7,41.5,38.6,41.5z"/>
+                <rect x="47.7" y="52.2" class="st3" width="17.3" height="1.8"/>
+                <path class="st2" d="M38.6,47.7c-3.1,0-5.6,2.5-5.6,5.6s2.5,5.6,5.6,5.6c3.1,0,5.6-2.5,5.6-5.6S41.7,47.7,38.6,47.7z M38.6,56.9
+                  c-2,0-3.7-1.7-3.7-3.7c0-2,1.7-3.7,3.7-3.7c1,0,1.9,0.4,2.5,1l-2.5,2.5l-1.5-1.5l-1.3,1.3l2.9,2.9l3.5-3.5c0.1,0.3,0.1,0.6,0.1,1
+                  C42.3,55.3,40.7,56.9,38.6,56.9z"/>
+                <rect x="47.7" y="67.6" class="st3" width="17.3" height="1.8"/>
+                <path class="st2" d="M38.6,63c-3.1,0-5.6,2.5-5.6,5.6c0,3.1,2.5,5.6,5.6,5.6c3.1,0,5.6-2.5,5.6-5.6C44.2,65.5,41.7,63,38.6,63z
+                   M38.6,72.3c-2,0-3.7-1.7-3.7-3.7c0-2,1.7-3.7,3.7-3.7c1,0,1.9,0.4,2.5,1l-2.5,2.5L37.1,67l-1.3,1.3l2.9,2.9l3.5-3.5
+                  c0.1,0.3,0.1,0.6,0.1,1C42.3,70.7,40.7,72.3,38.6,72.3z"/>
+              </g>
+              </svg>
+                          </div>
           </div>
           <div class="grid-col-12 tablet:grid-col-10">
             <p>
@@ -113,8 +816,44 @@
         <div class="grid-row">
           <div class="grid-col-12 tablet:grid-col-2">
             <div class="smallIconContainer margin-x-auto">
-              <img src="images/svgs/SDC_Icon_Security.svg" alt="">
-            </div>
+              <?xml version="1.0" encoding="utf-8"?>
+              <!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+              <style type="text/css">
+                .st0{fill:#A6325C;}
+                .st1{fill:#FF912B;}
+                .st2{fill:#40BED3;}
+                .st3{fill:#213B4F;}
+                .st4{fill-rule:evenodd;clip-rule:evenodd;fill:#FF912B;}
+                .st5{fill:#231F20;}
+                .st6{fill:none;}
+                .st7{fill:#E68429;}
+                .st8{fill:#CC8035;}
+                .st9{fill:#DBE0E3;}
+                .st10{fill:#BCC4CA;}
+                .st11{fill:#FFFFFF;}
+                .st12{fill:#282D33;}
+                .st13{fill:#E3E3E3;}
+              </style>
+              <g id="Icon17">
+                <path class="st2" d="M60.8,48c0-0.7-0.2-1.3-0.7-1.8c-0.5-0.6-1.1-0.8-1.9-0.9c0-0.2,0-0.4,0-0.6c0-1,0-2-0.1-3
+                  c-0.5-4.4-4.6-7.6-9-7.1c-4.2,0.5-7.4,4.1-7.4,8.4c0,0.8,0,1.5,0,2.3c-0.1,0-0.2,0-0.2,0c-1.4,0.2-2.3,1.2-2.3,2.5
+                  c0,3.6,0,7.3,0,10.9c0,1.5,1.1,2.6,2.5,2.6c5.5,0,11,0,16.4,0c1.5,0,2.5-1.1,2.5-2.6C60.8,55.3,60.8,51.6,60.8,48z M51.3,54.4v2.1
+                  c0,0.7-0.6,1.3-1.3,1.3l0,0c-0.7,0-1.3-0.6-1.3-1.3v-2.2c-0.9-0.5-1.5-1.4-1.5-2.5c0-1.6,1.3-2.8,2.8-2.8c1.6,0,2.8,1.3,2.8,2.8
+                  C52.8,53,52.2,53.9,51.3,54.4z M55.2,45.4c-3.4,0-6.9,0-10.4,0c0.1-1.4-0.2-2.9,0.4-4.2c0.9-2.4,3.1-3.7,5.5-3.5
+                  c2.3,0.2,4.3,2.2,4.6,4.6C55.3,43.2,55.2,44.3,55.2,45.4z"/>
+                <path class="st3" d="M50,21.9c6.8,4.6,13.8,8.6,22.2,9.5c0,0.2,0,0.4,0,0.5c0,6.7,0,13.4,0,20.1c0,6.2-2.4,11.4-6.6,15.8
+                  c-4.2,4.4-9.2,7.7-14.9,10c-0.3,0.1-0.5,0.2-0.8,0.2c-0.2,0-0.4,0-0.7-0.1c-7-2.9-13.1-7.1-17.7-13.3c-2.5-3.4-3.8-7.2-3.8-11.4
+                  c-0.1-7.1-0.1-14.3-0.1-21.4c0-0.1,0-0.2,0-0.4C36.1,30.5,43.2,26.5,50,21.9 M50,17.5c-0.9,0-1.7,0.3-2.5,0.8
+                  c-2.7,1.8-6.2,4.1-9.9,5.8c-3.6,1.6-6.9,2.6-10.3,2.9c-2.1,0.2-3.7,1.8-4,3.9c0,0,0,0,0,0c0,0.2-0.1,0.5-0.1,0.9c0,2.1,0,4.2,0,6.2
+                  c0,5,0,10.2,0.1,15.3c0,2.5,0.5,5,1.2,7.3c0.8,2.3,1.9,4.5,3.4,6.6c2.4,3.4,5.4,6.3,8.8,8.9c3.1,2.3,6.7,4.3,10.7,6
+                  c0.8,0.3,1.6,0.5,2.4,0.5c0.8,0,1.6-0.2,2.5-0.5c3.1-1.3,6.1-2.8,8.8-4.6c2.8-1.8,5.4-4,7.7-6.4c5.2-5.4,7.8-11.8,7.8-18.9
+                  c0-4.3,0-8.6,0-12.8c0-2.5,0-4.9,0-7.4c0-0.3,0-0.6-0.1-0.8c0,0,0-0.1,0-0.1c-0.2-2.1-1.8-3.8-4-4c-7.7-0.8-14.2-4.7-20.2-8.7
+                  C51.8,17.8,50.9,17.5,50,17.5L50,17.5z"/>
+              </g>
+              </svg>
+                          </div>
           </div>
           <div class="grid-col-12 tablet:grid-col-10">
             <p>
@@ -127,8 +866,56 @@
         <div class="grid-row">
           <div class="grid-col-12 tablet:grid-col-2">
             <div class="smallIconContainer margin-x-auto">
-              <img src="images/svgs/SDC_Icon_Access.svg" alt="">
-            </div>
+              <?xml version="1.0" encoding="utf-8"?>
+              <!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+              <style type="text/css">
+                .st0{fill:#A6325C;}
+                .st1{fill:#FF912B;}
+                .st2{fill:#40BED3;}
+                .st3{fill:#213B4F;}
+                .st4{fill-rule:evenodd;clip-rule:evenodd;fill:#FF912B;}
+                .st5{fill:#231F20;}
+                .st6{fill:none;}
+                .st7{fill:#E68429;}
+                .st8{fill:#CC8035;}
+                .st9{fill:#DBE0E3;}
+                .st10{fill:#BCC4CA;}
+                .st11{fill:#FFFFFF;}
+                .st12{fill:#282D33;}
+                .st13{fill:#E3E3E3;}
+              </style>
+              <g id="Icon18">
+                <circle class="st1" cx="27.3" cy="29.1" r="3.5"/>
+                <circle class="st0" cx="50.2" cy="35.3" r="3.5"/>
+                <circle class="st2" cx="36.2" cy="68" r="3.5"/>
+                <path class="st2" d="M80.9,48.4h-27l5.4-5.4c0.6-0.6,0.6-1.7,0-2.3c-0.6-0.6-1.7-0.6-2.3,0l-8.1,8.1c0,0-0.1,0.1-0.1,0.1
+                  c0,0,0,0,0,0.1c0,0,0,0-0.1,0.1c0,0,0,0,0,0.1c0,0,0,0,0,0.1c0,0,0,0,0,0.1c0,0,0,0,0,0.1c0,0,0,0,0,0.1c0,0,0,0.1,0,0.1
+                  c0,0,0,0,0,0.1c0,0,0,0.1,0,0.1c0,0,0,0.1,0,0.1c0,0,0,0,0,0.1c0,0.1,0,0.1,0,0.2c0,0,0,0,0,0c0,0,0,0,0,0c0,0.1,0,0.1,0,0.2
+                  c0,0,0,0,0,0.1c0,0,0,0.1,0,0.1c0,0,0,0.1,0,0.1c0,0,0,0,0,0.1c0,0,0,0.1,0,0.1c0,0,0,0,0,0.1c0,0,0,0,0,0.1c0,0,0,0,0,0.1
+                  c0,0,0,0,0,0.1c0,0,0,0,0,0.1c0,0,0,0,0.1,0.1c0,0,0,0,0,0.1c0,0,0.1,0.1,0.1,0.1l8.1,8.1c0.3,0.3,0.7,0.5,1.1,0.5
+                  c0.4,0,0.8-0.2,1.1-0.5c0.6-0.6,0.6-1.7,0-2.3l-5.4-5.4h27c0.9,0,1.6-0.7,1.6-1.6S81.8,48.4,80.9,48.4z"/>
+                <path class="st3" d="M70.7,70.7c-5.5,5.5-12.9,8.6-20.7,8.6c-7.8,0-15.2-3-20.7-8.6c-5.5-5.5-8.6-12.9-8.6-20.7
+                  c0-5.9,1.7-11.6,5.1-16.4c0.5,0.2,1,0.3,1.6,0.3c2.7,0,4.9-2.2,4.9-4.9c0-0.7-0.1-1.3-0.4-1.9c2.5-2,5.3-3.5,8.2-4.6
+                  c3.2-1.1,6.5-1.7,9.9-1.7c7.8,0,15.2,3,20.7,8.6c0.3,0.3,0.7,0.5,1.1,0.5c0.4,0,0.8-0.2,1.1-0.5c0.6-0.6,0.6-1.7,0-2.3
+                  c-6.1-6.1-14.3-9.5-23-9.5c-3.8,0-7.5,0.6-11,1.9c-3.4,1.2-6.5,3-9.3,5.2c-0.7-0.4-1.5-0.6-2.3-0.6c-2.7,0-4.9,2.2-4.9,4.9
+                  c0,1,0.3,1.9,0.8,2.6C19.5,37,17.5,43.4,17.5,50c0,8.7,3.4,16.8,9.5,23c6.1,6.1,14.3,9.5,23,9.5s16.8-3.4,23-9.5
+                  c0.6-0.6,0.6-1.7,0-2.3C72.3,70,71.3,70,70.7,70.7z M27.4,27.3c0.9,0,1.6,0.7,1.6,1.6c0,0.9-0.7,1.6-1.6,1.6
+                  c-0.9,0-1.6-0.7-1.6-1.6C25.7,28,26.5,27.3,27.4,27.3z"/>
+                <path class="st3" d="M67.2,35.1c0.6-0.6,0.6-1.7,0-2.3c-4.6-4.6-10.7-7.1-17.2-7.1c-6.5,0-12.6,2.5-17.2,7.1
+                  c-4.6,4.6-7.1,10.7-7.1,17.2c0,5.9,2.2,11.7,6.1,16.1c-0.2,0.6-0.4,1.2-0.4,1.9c0,2.7,2.2,4.9,4.9,4.9c1.1,0,2.1-0.4,3-1
+                  c3.3,1.7,7.1,2.5,10.8,2.5c6.5,0,12.6-2.5,17.2-7.1c0.6-0.6,0.6-1.7,0-2.3c-0.6-0.6-1.7-0.6-2.3,0c-4,4-9.3,6.2-14.9,6.2
+                  c-3.1,0-6.2-0.7-9-2c0.1-0.4,0.1-0.7,0.1-1.1c0-2.7-2.2-4.9-4.9-4.9c-0.8,0-1.6,0.2-2.3,0.6c-3.2-3.8-5-8.7-5-13.7
+                  c0-11.6,9.5-21.1,21.1-21.1c5.6,0,10.9,2.2,14.9,6.2C65.6,35.7,66.6,35.7,67.2,35.1z M36.2,66.4c0.9,0,1.6,0.7,1.6,1.6
+                  c0,0.9-0.7,1.6-1.6,1.6s-1.6-0.7-1.6-1.6C34.6,67.1,35.3,66.4,36.2,66.4z"/>
+                <path class="st3" d="M45.7,37.7c0.8,1.4,2.4,2.4,4.2,2.4c2.7,0,4.9-2.2,4.9-4.9c0-2.7-2.2-4.9-4.9-4.9c-2.4,0-4.5,1.8-4.8,4.1
+                  c0,0-0.1,0-0.1,0c-3.2,1.1-6,3.1-8.1,5.8c-2.1,2.8-3.2,6.1-3.2,9.6c0,9,7.3,16.2,16.2,16.2c0.9,0,1.6-0.7,1.6-1.6
+                  c0-0.9-0.7-1.6-1.6-1.6c-7.2,0-13-5.8-13-13C37,44.4,40.5,39.5,45.7,37.7z M49.9,33.6c0.9,0,1.6,0.7,1.6,1.6c0,0.9-0.7,1.6-1.6,1.6
+                  c-0.9,0-1.6-0.7-1.6-1.6C48.3,34.4,49,33.6,49.9,33.6z"/>
+              </g>
+              </svg>
+                          </div>
           </div>
           <div class="grid-col-12 tablet:grid-col-10">
             <p>
@@ -143,9 +930,6 @@
     </div>
   </div>
 </main>
-<footer role="contentinfo">
-  <div id="footer"></div>
-</footer>
-<script src="assets/js/uswds.min.js"></script>
+
 </body>
 </html>
